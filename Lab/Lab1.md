@@ -96,6 +96,6 @@ graph TD;
     VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
     Cadastrar --> Negociar
     Negociar --> FormaPagamento[Escolher Forma de Pagamento]
-    FormaPagamento --> Pagar1[Realizar Pagamento 1ª Parte]
+    FormaPagamento --> Pagar1[Inicia o processo de Faturamento]
     Pagar1 --> FimVenda[Fim]
 ```
