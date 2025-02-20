@@ -77,7 +77,15 @@ graph TD;
     CancelamentoPorNaoPagamento --> Avaliacao
 
     
-
+    InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
+    EscolherProduto --> Carrinho[Carrinho]
+    Carrinho --> VerificaExistenciaConta{Possui Conta?}
+    VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
+    VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
+    Cadastrar --> Negociar
+    Negociar --> FormaPagamento[Escolher Forma de Pagamento]
+    FormaPagamento --> Pagar1[Realizar Pagamento 1ª Parte]
+    Pagar1 --> FimVenda[Fim]
 
 
 
