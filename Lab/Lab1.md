@@ -65,7 +65,15 @@ graph TD;
     Verifica --> |Informações não encontrada ou incorretas| MensagemDeErroLogin[Aparece botões para poder tentar novamente ou criar conta]
     MensagemDeErroLogin-->InserirInfos;
     MensagemDeErroLogin-->RedirectRegistro[Entrar no processo de registro];
+```
 
+# Processo de Faturamento 
+
+O comprador deve enviar metade do valor do produto, que fica retido dentro da plataforma, após isso o vendedor começa o desenvolvimento, quando o produto está finalizado o consumidor é notificado e deve pagar a segunda parte do valor.
+
+Quando a segunda parte do valor é paga o vendedor envia o produto, após a confirmação da entrega do produto por parte do consumidor o valor retido na plataforma é enviado para o vendedor com o desconto da plataforma
+```mermaid
+graph TD;
     Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
     PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
@@ -75,8 +83,11 @@ graph TD;
     EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
     PagamentoAoVendedor--> Avaliacao[Avaliação]
     CancelamentoPorNaoPagamento --> Avaliacao
+```
 
-    
+# Processo de Venda 
+```mermaid
+graph TD;
     InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
     EscolherProduto --> Carrinho[Carrinho]
     Carrinho --> VerificaExistenciaConta{Possui Conta?}
@@ -84,19 +95,6 @@ graph TD;
     VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
     Cadastrar --> Negociar
     Negociar --> FormaPagamento[Escolher Forma de Pagamento]
-    FormaPagamento --> Pagar1[Realizar Pagamento 1ª Parte]
+    FormaPagamento --> Pagar1[Inicia o processo de Faturamento]
     Pagar1 --> FimVenda[Fim]
-
-
-
-
-
-
-
 ```
-
-# Processo de Faturamento 
-
-Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
-
-comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
