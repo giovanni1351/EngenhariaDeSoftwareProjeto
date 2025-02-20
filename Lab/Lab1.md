@@ -69,10 +69,9 @@ graph TD;
 
 # Processo de Faturamento 
 
-Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
+O comprador deve enviar metade do valor do produto, que fica retido dentro da plataforma, após isso o vendedor começa o desenvolvimento, quando o produto está finalizado o consumidor é notificado e deve pagar a segunda parte do valor.
 
-comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
-
+Quando a segunda parte do valor é paga o vendedor envia o produto, após a confirmação da entrega do produto por parte do consumidor o valor retido na plataforma é enviado para o vendedor com o desconto da plataforma
 ```mermaid
 graph TD;
     Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
