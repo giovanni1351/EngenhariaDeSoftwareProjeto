@@ -65,7 +65,17 @@ graph TD;
     Verifica --> |Informações não encontrada ou incorretas| MensagemDeErroLogin[Aparece botões para poder tentar novamente ou criar conta]
     MensagemDeErroLogin-->InserirInfos;
     MensagemDeErroLogin-->RedirectRegistro[Entrar no processo de registro];
+```
 
+# Processo de Faturamento 
+
+Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
+
+comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
+
+# Processo de cadastro
+```mermaid
+graph TD;
     Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
     PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
@@ -75,8 +85,17 @@ graph TD;
     EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
     PagamentoAoVendedor--> Avaliacao[Avaliação]
     CancelamentoPorNaoPagamento --> Avaliacao
+```
 
-    
+# Processo de Faturamento 
+
+Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
+
+comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
+
+# Processo de cadastro
+```mermaid
+graph TD;
     InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
     EscolherProduto --> Carrinho[Carrinho]
     Carrinho --> VerificaExistenciaConta{Possui Conta?}
@@ -86,17 +105,4 @@ graph TD;
     Negociar --> FormaPagamento[Escolher Forma de Pagamento]
     FormaPagamento --> Pagar1[Realizar Pagamento 1ª Parte]
     Pagar1 --> FimVenda[Fim]
-
-
-
-
-
-
-
 ```
-
-# Processo de Faturamento 
-
-Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
-
-comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
