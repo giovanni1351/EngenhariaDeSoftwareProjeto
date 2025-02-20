@@ -73,7 +73,6 @@ Comprador envia metado do valor do produto, vendedor começa a fazer o serviço,
 
 comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
 
-# Processo de cadastro
 ```mermaid
 graph TD;
     Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
@@ -87,13 +86,7 @@ graph TD;
     CancelamentoPorNaoPagamento --> Avaliacao
 ```
 
-# Processo de Faturamento 
-
-Comprador envia metado do valor do produto, vendedor começa a fazer o serviço, apos finalizado, o comprador é sinalizado para enviar a outra metade
-
-comprador paga o restante, porem valor fica preso na plataforma, vendedor envia o produto, comprador confirma a entrega e o valor é entregue para o vendedor
-
-# Processo de cadastro
+# Processo de Venda 
 ```mermaid
 graph TD;
     InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
