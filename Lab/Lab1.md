@@ -4,13 +4,13 @@ Temos que fazer um projeto que tenha um criador de conteudo e usuario, ou um pre
 
 # 4 Processos muito importantes
 
-- Venda *A fazer*
+- Venda
 
-- Cancelamento *A fazer*
+- Cancelamento
 
-- Faturamento *Feito* 
+- Faturamento 
 
-- NPS (Avaliação) *Dentro do Faturamento*
+-- NPS (Avaliação)
 
 ## A nossa empresa vai ter muito mais processos do que esses. Mas esses 4 são obrigatorios na avaliação!
 
@@ -105,6 +105,8 @@ graph TD;
 ```
 
 # Processo de Avaliação
+No processo de avaliação nós enviamos um formulário para o comprador, após um mês com produto/serviço em mãos, para registrar informações sobre a avaliação do produto e comentários que o comprador achar relevenate registrar
+
 ```mermaid
 graph TD;
 
@@ -114,6 +116,9 @@ graph TD;
 ```
 
 # Processo de Cancelamento
+Nesse processo nós recebemos a solicitação do cancelamento por alguma das partes envolvidas na compra, caso o vendedor seja o solicitante então a primeira parcela paga pelo comprador é devolvida para o comprador.
+
+Caso o solicitante seja o próprio comprador então o valor pago da primeira parcela será direcionado ao o vendedor para compensar pelo período que ele passou desenvolvendo
 ```mermaid
 graph TD;
 
