@@ -55,6 +55,11 @@ graph TD;
     D-->|Caso informações não esteja de acordo para o cadastro|G[Enviar aviso ao usuario de erro em alguma informação no formulario];
     G-->|Tentar novamente|D;
     E-->F[Logar];
+```
+
+# Processo de Login
+```mermaid
+grapth TD;
 
     Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
     EntrarForm --> InserirInfos[Inserir informações de login];
@@ -86,6 +91,11 @@ graph TD;
 ```
 
 # Processo de Venda 
+
+O processo de venda se inicia quando o comprador escolhe um produto/serviço e o adiciona no carrinho de compras, após isso fazemos a verificação de conta onde pode ser necessário ou não direcionar o cliente para o processod de cadastro.
+
+Após isso um chat com o vendedor é aberto onde pode ocorrer negecociações ou esclarecimento de dúvidas.
+Com todos os pontos em ordem iniciamos o processo de faturamento
 ```mermaid
 graph TD;
 
@@ -95,9 +105,8 @@ graph TD;
     VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
     VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
     Cadastrar --> Negociar
-    Negociar --> FormaPagamento[Escolher Forma de Pagamento]
-    FormaPagamento --> Pagar1[Inicia o processo de Faturamento]
-    Pagar1 --> FimVenda[Fim]
+    Negociar --> ProcessoFaturamento[Inicio do processo de Faturamento]
+    ProcessoFaturamento --> FimVenda[Fim]
 ```
 
 # Processo de Avaliação
