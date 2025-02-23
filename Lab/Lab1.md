@@ -56,7 +56,6 @@ graph TD;
     G-->|Tentar novamente|D;
     E-->F[Logar];
 
-
     Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
     EntrarForm --> InserirInfos[Inserir informações de login];
     InserirInfos --> Verifica[ Verificar informações preenchidas];
@@ -74,6 +73,7 @@ O comprador deve enviar metade do valor do produto, que fica retido dentro da pl
 Quando a segunda parte do valor é paga o vendedor envia o produto, após a confirmação da entrega do produto por parte do consumidor o valor retido na plataforma é enviado para o vendedor com o desconto da plataforma
 ```mermaid
 graph TD;
+
     Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
     PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
@@ -88,6 +88,7 @@ graph TD;
 # Processo de Venda 
 ```mermaid
 graph TD;
+
     InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
     EscolherProduto --> Carrinho[Carrinho]
     Carrinho --> VerificaExistenciaConta{Possui Conta?}
@@ -100,7 +101,35 @@ graph TD;
 ```
 
 # Processo de Avaliação
+```mermaid
+graph TD;
+
+    A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre a plataforma]
+    B --> C[Dados obtidos]
+    C --> D[Fim]
+```
 
 # Processo de Cancelamento
+```mermaid
+graph TD;
+
+    A[Início: Solicitação de Cancelamento] --> B{Vendedor quem solicitou?}
+    B --> |Sim| C[Notificação para o comprador]
+    B --> |Não| D[Notificação para o vendedor]
+    C --> E[Valor não é passado para o vendedor e a transação é encerrada]
+    D --> F[Valor da metade inicial é pago ao vendedor]
+    F --> Final[Fim da transação]
+    E --> Final
+```
 
 # Processo de Mudança de Tipo de Conta
+```mermaid
+graph TD;
+
+    A[Mudança de conta] --> B[Solicitação de alteração de conta consumer para vendedor]
+    B --> C[Solicitação de informações técnica]
+    C --> D[Solicitação de informações bancarias]
+    D --> E[Inserir portfolio]
+    E --> F[Escolha categoria de atuação]
+    F --> G[Operação realizada]
+```
