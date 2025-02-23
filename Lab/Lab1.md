@@ -55,11 +55,6 @@ graph TD;
     D-->|Caso informações não esteja de acordo para o cadastro|G[Enviar aviso ao usuario de erro em alguma informação no formulario];
     G-->|Tentar novamente|D;
     E-->F[Logar];
-```
-
-# Processo de Login
-```mermaid
-grapth TD;
 
     Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
     EntrarForm --> InserirInfos[Inserir informações de login];
