@@ -98,3 +98,9 @@ graph TD;
     FormaPagamento --> Pagar1[Inicia o processo de Faturamento]
     Pagar1 --> FimVenda[Fim]
 ```
+
+# Processo de Avaliação
+
+# Processo de Cancelamento
+
+# Processo de Mudança de Tipo de Conta
