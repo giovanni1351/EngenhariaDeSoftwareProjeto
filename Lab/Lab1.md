@@ -74,7 +74,7 @@ Quando a segunda parte do valor é paga o vendedor envia o produto, após a conf
 ```mermaid
 graph TD;
 
-    Fat[Faturamento]-->PagamentoInicial[Comprador Faz o pagamento inicial]
+    Fat[Faturamento]-->PagamentoInicial[Comprador escolhe a forma de pagamento e faz o pagamento inicial]
     PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
     FimDoDev --> SolcitacaoPagamentoParte2[Comprador é solicitado para o pagamento da segund parte do valor do produto]
