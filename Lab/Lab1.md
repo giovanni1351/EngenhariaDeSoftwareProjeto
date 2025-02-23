@@ -132,10 +132,13 @@ graph TD;
 ```
 
 # Processo de Mudança de Tipo de Conta
+Quando o recebemos a solicitação de alteração de conta de consumidor para vendedor, nós enviamos um formulário para cadastrar as informações técnicas do vendedor
+Solicitamos também as informações bancárias do vendedor para os pagamentos e a opção do vendedor inserir portifólios, caso tenha, para os compradores poderem consultar antes de fazer a compra
+E por fim o vendedor deve escolher pelo menos uma área de atuação
 ```mermaid
 graph TD;
 
-    A[Mudança de conta] --> B[Solicitação de alteração de conta consumer para vendedor]
+    A[Mudança de conta] --> B[Solicitação de alteração de conta consumidor para vendedor]
     B --> C[Solicitação de informações técnica]
     C --> D[Solicitação de informações bancarias]
     D --> E[Inserir portfolio]
