@@ -167,9 +167,9 @@ Nesse processo nós recebemos a solicitação do cancelamento por alguma das par
 Caso o solicitante seja o próprio comprador então o valor pago da primeira parcela será direcionado ao o vendedor para compensar pelo período que ele passou desenvolvendo.
 
 ## Atividades
-1. Solicitação de cancelamento.
-2. Caso o vendedor tenha solicitado, o valor será extornado ao cliente.
-3. Caso o cliente tenha solicitado, o valor pago anteriormente irá para o vendedor.
+1. Solicitação de cancelamento
+2. Caso o vendedor tenha solicitado, o valor será extornado ao cliente
+3. Caso o cliente tenha solicitado, o valor pago anteriormente irá para o vendedor
    
 ```mermaid
 graph TD;
@@ -190,8 +190,8 @@ E por fim o vendedor deve escolher pelo menos uma área de atuação.
 
 ## Atividades
 1. Solicitação de mudança de conta
-2. Preenchimento de informações pessoais
-3. Preenchimento de informações técnicas
+2. Preenchimento de informações técnicas
+3. Preenchimento de informações bancárias
 4. Solicitacão do Portólio de projetos
 5. Validação das informações do usuário
 6. Mudança de conta 
