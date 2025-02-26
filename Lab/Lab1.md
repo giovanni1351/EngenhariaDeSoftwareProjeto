@@ -50,6 +50,19 @@ O sistema valida o formato do e-mail, a autenticidade do documento e a seguranç
 
 Após a validação, um e-mail de confirmação é enviado para ativação da conta. Em caso de problemas, o suporte deve ser contatado.
 
+## Atividades de Cadastro
+1. Usuario entra na tela de cadstro
+2. Preenche os campos obrigatorio (CPF,e-mail,nome,data de nascimento,telefone,endereço)
+3. Processo valida as informações
+4. Cadastro efetuado
+
+## Atividades de Login
+1. Usuario entra na tela de login
+2. Usuario preenche o formulario de login
+3. As informações são validadas em nosso banco
+4. Usuario é logado e pode criar seu carrinho
+
+## Diagrama
 
 ```mermaid
 graph TD;
@@ -108,6 +121,15 @@ O processo de venda se inicia quando o comprador escolhe um produto/serviço e o
 
 Após isso um chat com o vendedor é aberto onde pode ocorrer negecociações ou esclarecimento de dúvidas.
 Com todos os pontos em ordem iniciamos o processo de faturamento
+## Atividades
+1. O usuario entra no catalogo 
+2. Seleciona o produto
+3. Na tela do produto ele pode adicionar no carrinho 
+4. Entra na tela de pagamento do carrinhho
+5. Inicia o processo de faturamento
+
+
+## Diagrama
 ```mermaid
 graph TD;
 
