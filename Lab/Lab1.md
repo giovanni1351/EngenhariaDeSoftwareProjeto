@@ -46,6 +46,13 @@ Carrosel na tela inicial fixo (position absolute na direita) para os produtos qu
 
 
 # Processo de cadastro
+O usuário deve informar os campos obrigatórios, como nome, CPF, e-mail e senha. 
+
+O sistema valida o formato do e-mail, a autenticidade do documento e a segurança da senha. 
+
+Após a validação, um e-mail de confirmação é enviado para ativação da conta. Em caso de problemas, o suporte deve ser contatado.
+
+
 ```mermaid
 graph TD;
     A[Criar conta no marketplace]-->B[Entrar no site];
