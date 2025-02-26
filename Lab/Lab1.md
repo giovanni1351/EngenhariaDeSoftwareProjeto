@@ -2,15 +2,13 @@
 Temos que fazer um projeto que tenha um criador de conteudo e usuario, ou um prestador de servico e um consumidor
 
 
-# 4 Processos muito importantes
-
+# Processos
+- Cadastro e Login
+- Faturamento
 - Venda
-
+- Avaliação
 - Cancelamento
-
-- Faturamento 
-
--- NPS (Avaliação)
+- Mudança de Conta
 
 ## A nossa empresa vai ter muito mais processos do que esses. Mas esses 4 são obrigatorios na avaliação!
 
