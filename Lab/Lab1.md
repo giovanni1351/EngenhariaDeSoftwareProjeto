@@ -76,6 +76,17 @@ graph TD;
 O comprador deve enviar metade do valor do produto, que fica retido dentro da plataforma, após isso o vendedor começa o desenvolvimento, quando o produto está finalizado o consumidor é notificado e deve pagar a segunda parte do valor.
 
 Quando a segunda parte do valor é paga o vendedor envia o produto, após a confirmação da entrega do produto por parte do consumidor o valor retido na plataforma é enviado para o vendedor com o desconto da plataforma
+
+## Atividades
+1. Comprador escolhe a forma de pagamento
+2. Comprador faz o pagamento da primeira parcela
+3. Vendedor inica o desenvolvimento
+4. Comprador recebe a solicitação de pagamento da segunda parte
+5. Caso o comprador pague a segunda parte o produto é entregue ao comprador
+6. Caso contrário o processo de cancelamento se inicia
+7. Inicio do processo de avaliação
+
+## Diagrama
 ```mermaid
 graph TD;
 
@@ -84,7 +95,7 @@ graph TD;
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
     FimDoDev --> SolcitacaoPagamentoParte2{Comprador é solicitado para o pagamento da segund parte do valor do produto}
     SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
-    SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[ A transação é cancelada e o valor inicial é retornado para o comprador]
+    SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[ Inicio do processo de cancelamento]
     EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
     PagamentoAoVendedor--> Avaliacao[Avaliação]
     CancelamentoPorNaoPagamento --> Avaliacao
