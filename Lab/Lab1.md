@@ -124,10 +124,16 @@ graph TD;
 # Processo de Avaliação
 No processo de avaliação nós enviamos um formulário para o comprador, após um mês com produto/serviço em mãos, para registrar informações sobre a avaliação do produto e comentários que o comprador achar relevenate registrar
 
+## Atividades
+1. Um formulário é enviado ao comprador após 1 mês da compra produto
+2. Comprador preenche o formulário com a avaliação do Produto, Vendedor e Plataforma
+3. Registramos os dados
+
+## Diagrama
 ```mermaid
 graph TD;
 
-    A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre a plataforma]
+    A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre o Produto, Vendedor e Plataforma]
     B --> C[Dados obtidos]
     C --> D[Fim]
 ```
