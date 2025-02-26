@@ -55,7 +55,7 @@ Após a validação, um e-mail de confirmação é enviado para ativação da co
 graph TD;
     A[Criar conta no marketplace]-->B[Entrar no site];
     B-->C[Entrar no formulario de cadastro];
-    C-->D[Inserir informações];
+    C-->D{Inserir informações};
     D-->|Caso informações esteja de acordo para o cadastro|E[Cadastro bem sucedido];
     D-->|Caso informações não esteja de acordo para o cadastro|G[Enviar aviso ao usuario de erro em alguma informação no formulario];
     G-->|Tentar novamente|D;
@@ -63,7 +63,7 @@ graph TD;
 
     Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
     EntrarForm --> InserirInfos[Inserir informações de login];
-    InserirInfos --> Verifica[ Verificar informações preenchidas];
+    InserirInfos --> Verifica{Verificar informações preenchidas};
     Verifica --> |Informações Encontradas e corretas| LogarCorreto[Login bem sucedido]
     LogarCorreto--> Redirect[Redirecionar para o site logado]
     Verifica --> |Informações não encontrada ou incorretas| MensagemDeErroLogin[Aparece botões para poder tentar novamente ou criar conta]
@@ -82,7 +82,7 @@ graph TD;
     Fat[Faturamento]-->PagamentoInicial[Comprador escolhe a forma de pagamento e faz o pagamento inicial]
     PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
     InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
-    FimDoDev --> SolcitacaoPagamentoParte2[Comprador é solicitado para o pagamento da segund parte do valor do produto]
+    FimDoDev --> SolcitacaoPagamentoParte2{Comprador é solicitado para o pagamento da segund parte do valor do produto}
     SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
     SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[ A transação é cancelada e o valor inicial é retornado para o comprador]
     EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
