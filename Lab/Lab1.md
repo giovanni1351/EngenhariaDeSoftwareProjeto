@@ -164,7 +164,13 @@ graph TD;
 # Processo de Cancelamento
 Nesse processo nós recebemos a solicitação do cancelamento por alguma das partes envolvidas na compra, caso o vendedor seja o solicitante então a primeira parcela paga pelo comprador é devolvida para o comprador.
 
-Caso o solicitante seja o próprio comprador então o valor pago da primeira parcela será direcionado ao o vendedor para compensar pelo período que ele passou desenvolvendo
+Caso o solicitante seja o próprio comprador então o valor pago da primeira parcela será direcionado ao o vendedor para compensar pelo período que ele passou desenvolvendo.
+
+## Atividades
+1. Solicitação de cancelamento.
+2. Caso o vendedor tenha solicitado, o valor será extornado ao cliente.
+3. Caso o cliente tenha solicitado, o valor pago anteriormente irá para o vendedor.
+   
 ```mermaid
 graph TD;
 
@@ -180,7 +186,16 @@ graph TD;
 # Processo de Mudança de Tipo de Conta
 Quando o recebemos a solicitação de alteração de conta de consumidor para vendedor, nós enviamos um formulário para cadastrar as informações técnicas do vendedor
 Solicitamos também as informações bancárias do vendedor para os pagamentos e a opção do vendedor inserir portifólios, caso tenha, para os compradores poderem consultar antes de fazer a compra
-E por fim o vendedor deve escolher pelo menos uma área de atuação
+E por fim o vendedor deve escolher pelo menos uma área de atuação.
+
+## Atividades
+1. Solicitação de mudança de conta
+2. Preenchimento de informações pessoais
+3. Preenchimento de informações técnicas
+4. Solicitacão do Portólio de projetos
+5. Validação das informações do usuário
+6. Mudança de conta 
+   
 ```mermaid
 graph TD;
 
