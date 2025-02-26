@@ -84,6 +84,34 @@ graph TD;
     MensagemDeErroLogin-->RedirectRegistro[Entrar no processo de registro];
 ```
 
+# Processo de Venda 
+
+O processo de venda se inicia quando o comprador escolhe um produto/serviço e o adiciona no carrinho de compras, após isso fazemos a verificação de conta onde pode ser necessário ou não direcionar o cliente para o processod de cadastro.
+
+Após isso um chat com o vendedor é aberto onde pode ocorrer negecociações ou esclarecimento de dúvidas.
+Com todos os pontos em ordem iniciamos o processo de faturamento
+## Atividades
+1. O usuario entra no catalogo 
+2. Seleciona o produto
+3. Na tela do produto ele pode adicionar no carrinho 
+4. Entra na tela de pagamento do carrinhho
+5. Inicia o processo de faturamento
+
+
+## Diagrama
+```mermaid
+graph TD;
+
+    InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
+    EscolherProduto --> Carrinho[Carrinho]
+    Carrinho --> VerificaExistenciaConta{Possui Conta?}
+    VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
+    VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
+    Cadastrar --> Negociar
+    Negociar --> ProcessoFaturamento[Inicio do processo de Faturamento]
+    ProcessoFaturamento --> FimVenda[Fim]
+```
+
 # Processo de Faturamento 
 
 O comprador deve enviar metade do valor do produto, que fica retido dentro da plataforma, após isso o vendedor começa o desenvolvimento, quando o produto está finalizado o consumidor é notificado e deve pagar a segunda parte do valor.
@@ -115,33 +143,6 @@ Avaliacao--> Fim[Fim]
     CancelamentoPorNaoPagamento --> Fim
 ```
 
-# Processo de Venda 
-
-O processo de venda se inicia quando o comprador escolhe um produto/serviço e o adiciona no carrinho de compras, após isso fazemos a verificação de conta onde pode ser necessário ou não direcionar o cliente para o processod de cadastro.
-
-Após isso um chat com o vendedor é aberto onde pode ocorrer negecociações ou esclarecimento de dúvidas.
-Com todos os pontos em ordem iniciamos o processo de faturamento
-## Atividades
-1. O usuario entra no catalogo 
-2. Seleciona o produto
-3. Na tela do produto ele pode adicionar no carrinho 
-4. Entra na tela de pagamento do carrinhho
-5. Inicia o processo de faturamento
-
-
-## Diagrama
-```mermaid
-graph TD;
-
-    InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
-    EscolherProduto --> Carrinho[Carrinho]
-    Carrinho --> VerificaExistenciaConta{Possui Conta?}
-    VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
-    VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
-    Cadastrar --> Negociar
-    Negociar --> ProcessoFaturamento[Inicio do processo de Faturamento]
-    ProcessoFaturamento --> FimVenda[Fim]
-```
 
 # Processo de Avaliação
 No processo de avaliação nós enviamos um formulário para o comprador, após um mês com produto/serviço em mãos, para registrar informações sobre a avaliação do produto e comentários que o comprador achar relevenate registrar
