@@ -16,8 +16,6 @@ Uma plataforma de anuncio e vendas de produtos e serviçoes de tecnologia (marke
 
 O anunciante pode anunciar varios produtos, com varias porcentagem de participação do lucro, ou seja, ele pode anunciar um produto que vale 100 reais e deixar 30 para nossa plataforma, isso vai nos dar um parametro de quanto ele pode ser bom para deixarmos ele em evidencia. 
 
-Nosso site vai ter areas de cadastro, login, tela de configuração da conta, para mudar da conta comprador para conta de anunciante
-
 # Telas
 
 Uma tela principal, onde vai ter os outdoors de anuncios dos produtos, essa tela tem que ter uma sazonalidade para ser sempre justo com os anunciantes
@@ -39,6 +37,8 @@ Tela de todos os produtos cadastrados do usuario vendedor
 Tela de analise de vendas
 
 Tela de analises comerciais do vendedor
+
+Tela de mudança de conta
 
 Carrosel na tela inicial fixo (position absolute na direita) para os produtos que são confiaveis da nossa marca, uma media de venda boa e uma confiaça no produto (forma de recompensa para bons vendedores)
 
