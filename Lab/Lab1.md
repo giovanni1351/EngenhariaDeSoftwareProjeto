@@ -98,7 +98,8 @@ graph TD;
     SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[ Inicio do processo de cancelamento]
     EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
     PagamentoAoVendedor--> Avaliacao[Avaliação]
-    CancelamentoPorNaoPagamento --> Avaliacao
+Avaliacao--> Fim[Fim]
+    CancelamentoPorNaoPagamento --> Fim
 ```
 
 # Processo de Venda 
