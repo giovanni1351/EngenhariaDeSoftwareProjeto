@@ -10,8 +10,6 @@ Temos que fazer um projeto que tenha um criador de conteudo e usuario, ou um pre
 - Cancelamento
 - Mudança de Conta
 
-## A nossa empresa vai ter muito mais processos do que esses. Mas esses 4 são obrigatorios na avaliação!
-
 # Nossa escolha atual
 
 Uma plataforma de anuncio e vendas de produtos e serviçoes de tecnologia (marketplace), o anunciante pode escolher a porcentagem que vai nos dar do valor do produto para ser anunciado na nossa plataforma, para poder impulcionar o prduto de alguma forma, no caso vamos criar areas no nosso site para deixar com destaque esse produto
@@ -19,6 +17,8 @@ Uma plataforma de anuncio e vendas de produtos e serviçoes de tecnologia (marke
 O anunciante pode anunciar varios produtos, com varias porcentagem de participação do lucro, ou seja, ele pode anunciar um produto que vale 100 reais e deixar 30 para nossa plataforma, isso vai nos dar um parametro de quanto ele pode ser bom para deixarmos ele em evidencia. 
 
 Nosso site vai ter areas de cadastro, login, tela de configuração da conta, para mudar da conta comprador para conta de anunciante
+
+# Telas
 
 Uma tela principal, onde vai ter os outdoors de anuncios dos produtos, essa tela tem que ter uma sazonalidade para ser sempre justo com os anunciantes
 
@@ -130,7 +130,7 @@ graph TD;
     A[Início: Solicitação de Cancelamento] --> B{Vendedor quem solicitou?}
     B --> |Sim| C[Notificação para o comprador]
     B --> |Não| D[Notificação para o vendedor]
-    C --> E[Valor não é passado para o vendedor e a transação é encerrada]
+    C --> E[O valor é extornado para o cliente]
     D --> F[Valor da metade inicial é pago ao vendedor]
     F --> Final[Fim da transação]
     E --> Final
