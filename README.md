@@ -1,6 +1,10 @@
-# O trabalho de engenharia de software é para criar uma empresa
-Temos que fazer um projeto que tenha um criador de conteudo e usuario, ou um prestador de servico e um consumidor
+# TechSales
 
+Uma plataforma de anuncio e vendas de produtos e serviçoes de tecnologia (marketplace)
+
+O anunciante pode escolher a porcentagem que vai nos dar do valor do produto para ser anunciado na nossa plataforma, para poder impulsionar o produto de alguma forma, no caso vamos criar areas no nosso site para deixar com destaque esse produto
+
+O anunciante pode anunciar varios produtos, com varias porcentagem de participação do lucro, ou seja, ele pode anunciar um produto que vale 100 reais e deixar 30 para nossa plataforma, isso vai nos dar um parametro de quanto ele pode ser bom para deixarmos ele em evidencia. 
 
 # Processos
 - Cadastro e Login
@@ -10,13 +14,9 @@ Temos que fazer um projeto que tenha um criador de conteudo e usuario, ou um pre
 - Cancelamento
 - Mudança de Conta
 
-# Nossa escolha atual
 
-Uma plataforma de anuncio e vendas de produtos e serviçoes de tecnologia (marketplace), o anunciante pode escolher a porcentagem que vai nos dar do valor do produto para ser anunciado na nossa plataforma, para poder impulsionar o produto de alguma forma, no caso vamos criar areas no nosso site para deixar com destaque esse produto
 
-O anunciante pode anunciar varios produtos, com varias porcentagem de participação do lucro, ou seja, ele pode anunciar um produto que vale 100 reais e deixar 30 para nossa plataforma, isso vai nos dar um parametro de quanto ele pode ser bom para deixarmos ele em evidencia. 
-
-# Telas
+# Telas / Funcionalidades
 
 Uma tela principal, onde vai ter os outdoors de anuncios dos produtos, essa tela tem que ter uma sazonalidade para ser sempre justo com os anunciantes
 
