@@ -13,7 +13,7 @@ O anunciante pode anunciar varios produtos, com varias porcentagem de participa�
 - Avaliação
 - Cancelamento
 - Mudança de Conta
-
+- Cadastro de Produto
 
 
 # Telas / Funcionalidades
@@ -206,3 +206,35 @@ graph TD;
     E --> F[Escolha categoria de atuação]
     F --> G[Operação realizada]
 ```
+# Processo de Cadastro de Produto
+
+O processo de cadastro de produto permite que o vendedor registre novos produtos ou serviços na plataforma, especificando detalhes como nome, descrição, preço, imagens e porcentagem de comissão destinada à plataforma. Esse processo garante que os produtos fiquem disponíveis para compra pelos consumidores.
+
+## Atividades
+1. O vendedor acessa sua conta na plataforma.
+2. O vendedor entra na tela de cadastro de produtos.
+3. O vendedor preenche as informações necessárias, incluindo:
+   - Nome do produto/serviço
+   - Descrição detalhada
+   - Categoria
+   - Preço
+   - Porcentagem de comissão para a plataforma
+   - Imagens do produto
+   - Opções de estoque (caso aplicável)
+4. O sistema valida os dados inseridos.
+5. Caso os dados sejam válidos, o produto é cadastrado com sucesso e passa a ficar disponível na plataforma.
+6. Caso haja alguma inconsistência, o sistema exibe uma mensagem de erro e solicita a correção das informações.
+
+## Diagrama
+```mermaid
+graph TD;
+    A[Início do Cadastro de Produto] --> B[Acesso do vendedor à plataforma]
+    B --> C[Abertura da tela de cadastro de produtos]
+    C --> D[Preenchimento das informações do produto]
+    D --> E{Validação das informações}
+    E -->|Válido| F[Produto cadastrado com sucesso]
+    E -->|Inválido| G[Erro exibido e solicita correção]
+    G --> D
+    F --> H[Fim]
+```
+
