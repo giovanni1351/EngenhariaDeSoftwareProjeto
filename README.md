@@ -220,7 +220,6 @@ O processo de cadastro de produto permite que o vendedor registre novos produtos
    - Preço
    - Porcentagem de comissão para a plataforma
    - Imagens do produto
-   - Opções de estoque (caso aplicável)
 4. O sistema valida os dados inseridos.
 5. Caso os dados sejam válidos, o produto é cadastrado com sucesso e passa a ficar disponível na plataforma.
 6. Caso haja alguma inconsistência, o sistema exibe uma mensagem de erro e solicita a correção das informações.
