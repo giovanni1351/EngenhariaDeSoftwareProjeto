@@ -159,14 +159,7 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 
 ## Requisitos Não Funcionais
 
-### Requisitos de Ética
-- RNF37: O sistema deve garantir a privacidade dos dados dos usuários, não compartilhando informações sem consentimento explícito.
-- RNF38: O sistema deve implementar mecanismos para evitar discriminação e preconceito em suas funcionalidades.
-- RNF39: O sistema deve fornecer transparência sobre o uso de dados e algoritmos utilizados.
-- RNF40: O sistema deve permitir que os usuários controlem suas próprias informações e decidam sobre seu uso.
-- RNF41: O sistema deve promover práticas de comércio justo, evitando práticas enganosas ou fraudulentas.
-- RNF42: O sistema deve garantir acessibilidade para todos os usuários, incluindo aqueles com deficiências.
-- RNF43: O sistema deve ser projetado para minimizar impactos ambientais, utilizando recursos de forma eficiente.
+
 
 ### Requisitos de Performance
 - RNF01: O sistema deve carregar a página inicial em menos de 3 segundos.
@@ -220,6 +213,14 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 - RNF35: O sistema deve seguir práticas éticas de desenvolvimento, garantindo privacidade e segurança dos dados dos usuários.
 - RNF36: O sistema deve ser auditável para garantir conformidade com requisitos legais e regulatórios.
 
+### Requisitos de Ética
+- RNF37: O sistema deve garantir a privacidade dos dados dos usuários, não compartilhando informações sem consentimento explícito.
+- RNF38: O sistema deve implementar mecanismos para evitar discriminação e preconceito em suas funcionalidades.
+- RNF39: O sistema deve fornecer transparência sobre o uso de dados e algoritmos utilizados.
+- RNF40: O sistema deve permitir que os usuários controlem suas próprias informações e decidam sobre seu uso.
+- RNF41: O sistema deve promover práticas de comércio justo, evitando práticas enganosas ou fraudulentas.
+- RNF42: O sistema deve garantir acessibilidade para todos os usuários, incluindo aqueles com deficiências.
+- RNF43: O sistema deve ser projetado para minimizar impactos ambientais, utilizando recursos de forma eficiente.
 
 ## Regras de Negócio
 
