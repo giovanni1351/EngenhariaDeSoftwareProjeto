@@ -159,6 +159,15 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 
 ## Requisitos Não Funcionais
 
+### Requisitos de Ética
+- RNF37: O sistema deve garantir a privacidade dos dados dos usuários, não compartilhando informações sem consentimento explícito.
+- RNF38: O sistema deve implementar mecanismos para evitar discriminação e preconceito em suas funcionalidades.
+- RNF39: O sistema deve fornecer transparência sobre o uso de dados e algoritmos utilizados.
+- RNF40: O sistema deve permitir que os usuários controlem suas próprias informações e decidam sobre seu uso.
+- RNF41: O sistema deve promover práticas de comércio justo, evitando práticas enganosas ou fraudulentas.
+- RNF42: O sistema deve garantir acessibilidade para todos os usuários, incluindo aqueles com deficiências.
+- RNF43: O sistema deve ser projetado para minimizar impactos ambientais, utilizando recursos de forma eficiente.
+
 ### Requisitos de Performance
 - RNF01: O sistema deve carregar a página inicial em menos de 3 segundos.
 - RNF02: O sistema deve processar pagamentos em menos de 10 segundos.
@@ -198,6 +207,19 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 - RNF26: O sistema deve implementar monitoramento em tempo real com alertas automáticos.
 - RNF27: O código deve seguir padrões de qualidade verificados por ferramentas automatizadas.
 - RNF28: O sistema deve manter logs detalhados para auditoria e resolução de problemas.
+
+### Requisitos Organizacionais
+- RNF29: O sistema deve ser desenvolvido utilizando a linguagem de programação Python.
+- RNF30: O desenvolvimento deve seguir metodologias ágeis, como Scrum.
+- RNF31: A equipe de desenvolvimento deve realizar revisões de código regulares.
+- RNF32: O sistema deve ser implantado em um ambiente de nuvem seguro e escalável.
+
+### Requisitos Externos
+- RNF33: O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD).
+- RNF34: O sistema deve atender às regulamentações de comércio eletrônico vigentes.
+- RNF35: O sistema deve seguir práticas éticas de desenvolvimento, garantindo privacidade e segurança dos dados dos usuários.
+- RNF36: O sistema deve ser auditável para garantir conformidade com requisitos legais e regulatórios.
+
 
 ## Regras de Negócio
 
