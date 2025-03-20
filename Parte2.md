@@ -110,7 +110,6 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 ### RF01 - Gerenciamento de Usuários
 - RF01.1: O sistema deve permitir o cadastro de novos usuários com nome, CPF, e-mail, senha, data de nascimento, telefone e endereço.
 - RF01.2: O sistema deve validar o formato do e-mail, autenticidade do documento e segurança da senha.
-- RF01.3: O sistema deve enviar e-mail de confirmação para ativação da conta.
 - RF01.4: O sistema deve permitir login de usuários cadastrados.
 - RF01.5: O sistema deve permitir a alteração de conta de comprador para vendedor.
 
