@@ -130,7 +130,6 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 ### RF04 - Faturamento e Pagamento
 - RF04.1: O sistema deve processar pagamentos em duas etapas.
 - RF04.2: O sistema deve reter valores até a confirmação da entrega.
-- RF04.3: O sistema deve calcular automaticamente a comissão da plataforma.
 - RF04.4: O sistema deve transferir valores para a conta do vendedor após confirmação.
 - RF04.5: O sistema deve gerar comprovantes de pagamento.
 
