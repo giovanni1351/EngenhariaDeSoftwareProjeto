@@ -51,24 +51,16 @@ Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **c
 
 ### Justificativa:
 
-1. **Workshops de Requisitos:**
-   - Permitem reunir representantes de diferentes stakeholders (compradores, vendedores, administradores).
-   - Facilitam a discussão colaborativa sobre os processos complexos (faturamento, cancelamento).
-   - Auxiliam na identificação de conflitos de requisitos entre diferentes partes interessadas.
+1. **Prototipação:**
+   - Será útil para validar os visuáis e também colher feedbacks sobre o desenvolvimento
 
-2. **Entrevistas Direcionadas:**
-   - Fornecem insights específicos de cada tipo de usuário.
-   - Permitem aprofundar em necessidades particulares (vendedores precisam de ferramentas analíticas diferentes dos compradores).
-   - Capturam expectativas e preocupações individuais.
+2. **Questionários**
+   - Questionários direcionados para vendedores e compradores de plataformas semelhantes. 
+Será útil para entender as necessidades de cada um, e também oferecer uma plataforma melhor para ambos os lados
 
-3. **Prototipação:**
-   - Essencial para validar o design das múltiplas telas mencionadas no documento.
-   - Permite que stakeholders visualizem a implementação antes do desenvolvimento completo.
-   - Facilita a coleta de feedback sobre usabilidade em estágios iniciais.
-
-4. **Análise de Sistemas Similares:**
-   - Complementarmente, analisar outros marketplaces para identificar boas práticas e diferenciais competitivos.
-
+3. **Brainstorming**
+   - Reuniões com a equipe para organizar e propor ideias e soluções
+     
 ### Processo de Coleta:
 
 1. Iniciar com workshops para entender processos de negócio macro.
@@ -424,64 +416,3 @@ A implementação deve focar inicialmente nos requisitos funcionais essenciais (
 As histórias de usuário apresentadas formam um backlog inicial para o desenvolvimento, priorizando a experiência de compradores e vendedores. A atenção às regras de negócio garantirá que o sistema atenda às expectativas de todos os stakeholders identificados.
 
 O próximo passo é definir o backlog priorizado, formar o time Scrum e iniciar o planejamento da primeira sprint, focando nas funcionalidades básicas que permitirão validar a proposta de valor da plataforma.
-
-
-
-
-
-
-
-
-
-Pergunta 1
-Remover:
-Item 2 (Kanban)
-Pq não usar outras metodologias
-
-
-Melhorias:
-Unir as justificativas Scrum e Kanban em um único texto
-
-Pergunta 2
-	Remover:
-		Riscos
-
-	Melhorias:
-		Reescrever tudo de uma maneira mais clara e objetiva
-
-
-Pergunta 3:
-	Remover:
-		Workshop de requisitos
-		Analise de Sistemas 
-Similares
-		Entrevistas Direcionadas
-		Analise de Documentos
-		Processo de Coleta
-		
-
-	Adicionar:
-		Brainstorming
-		Questionário
-
-Pergunta 4:
-	Remover os tópicos
-	Alterar a escrita de (RF01.1, RF01.2) para RF01 e RF02
-
-	Implementar RF02.5: O sistema deve exibir produtos em destaque na página inicial.
-
-
-RF:
-o sistema deve permitir inserir informações técnicas e bancarias para o cadastro do vendedor.
-
-O SISTEMA DEVE PERMITIR QUE O VENDEDOR CONSIGA CADASTRAR SEU PORTFOLIO
-
-O VENDEDOR DEVE CONSEGUIR INSERIR OU EDITAR A AREA DE ATUACAO(EDITAR ESSE PROCESSO MUDANCA DE TIPO DE CONTA)
-
-
-
-
-RF04.3: O sistema deve calcular automaticamente a comissão da plataforma.
-
-ME PARECE SER UM REGRA DE NEGOCIO
-
