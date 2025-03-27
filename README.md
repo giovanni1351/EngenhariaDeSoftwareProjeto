@@ -18,29 +18,36 @@ O anunciante pode anunciar varios produtos, com varias porcentagem de participa�
 
 # Telas / Funcionalidades
 
-Uma tela principal, onde vai ter os outdoors de anuncios dos produtos, essa tela tem que ter uma sazonalidade para ser sempre justo com os anunciantes
+1. **Telas Principais**:
+   - Página inicial/marketplace
+   - Tela de login
+   - Tela de cadastro de usuário
 
-Tela de compra do produto
+2. **Telas de Produtos**:
+   - Detalhes do produto
+   - Lista de produtos do vendedor
+   - Formulário para cadastrar novo produto
+   - Formulário para editar produto existente
 
-Tela de pesquisa, para encontrar produtos por categoria, depois de dar o enter no search que vai ter na tela principal
+3. **Telas de Compra/Venda**:
+   - Carrinho de compras
+   - Finalização da compra
+   - Resultados de pesquisa
+   - Histórico de compras do cliente
+   - Histórico de vendas do vendedor
 
-Tela de compras historicas
+4. **Telas de Avaliação**:
+   - Cliente avalia o vendedor
+   - Vendedor avalia o cliente
+   - Avaliação da plataforma
 
-Tela de admin, para cadastros de categorias de produto
+5. **Telas de Perfil**:
+   - Perfil do usuário/cliente
+   - Perfil do vendedor
 
-Tela de perfil, para mudar o tipo de conta
-
-Se a conta for de vendedor uma tela para cadastro de produto
-
-Tela de todos os produtos cadastrados do usuario vendedor
-
-Tela de analise de vendas
-
-Tela de analises comerciais do vendedor
-
-Tela de mudança de conta
-
-Carrosel na tela inicial fixo (position absolute na direita) para os produtos que são confiaveis da nossa marca, uma media de venda boa e uma confiaça no produto (forma de recompensa para bons vendedores)
+6. **Telas de Cancelamento**:
+   - Cliente cancela pedido
+   - Vendedor cancela pedido
 
 
 # Processo de cadastro
@@ -66,20 +73,33 @@ Após a validação, um e-mail de confirmação é enviado para ativação da co
 
 ```mermaid
 graph TD;
-    A[Criar conta no marketplace]-->B[Entrar no site];
-    B-->C[Entrar no formulario de cadastro];
-    C-->D{Inserir informações};
-    D-->|Caso informações esteja de acordo para o cadastro|E[Cadastro bem sucedido];
-    D-->|Caso informações não esteja de acordo para o cadastro|G[Enviar aviso ao usuario de erro em alguma informação no formulario];
-    G-->|Tentar novamente|D;
+    subgraph Usuario["Usuário"]
+        A[Criar conta no marketplace]-->B[Entrar no site];
+        B-->C[Entrar no formulario de cadastro];
+        C --> InfosInseridas[Inserir informações]
+    end
+    
+    subgraph Sistema["Sistema"]
+        InfosInseridas-->D{Validar informações};
+        D-->|Caso informações esteja de acordo para o cadastro|E[Cadastro bem sucedido];
+        D-->|Caso informações não esteja de acordo para o cadastro|G[Enviar aviso ao usuario de erro em alguma informação no formulario];
+    end
+    
+    G-->|Tentar novamente|InfosInseridas;
     E-->F[Logar];
 
-    Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
-    EntrarForm --> InserirInfos[Inserir informações de login];
-    InserirInfos --> Verifica{Verificar informações preenchidas};
-    Verifica --> |Informações Encontradas e corretas| LogarCorreto[Login bem sucedido]
-    LogarCorreto--> Redirect[Redirecionar para o site logado]
-    Verifica --> |Informações não encontrada ou incorretas| MensagemDeErroLogin[Aparece botões para poder tentar novamente ou criar conta]
+    subgraph UsuarioLogin["Usuário"]
+        Logar[Logar]--> EntrarForm[Entrar no Formulario de login];
+        EntrarForm --> InserirInfos[Inserir informações de login];
+    end
+    
+    subgraph SistemaLogin["Sistema"]
+        InserirInfos --> Verifica{Verificar informações preenchidas};
+        Verifica --> |Informações Encontradas e corretas| LogarCorreto[Login bem sucedido]
+        LogarCorreto--> Redirect[Redirecionar para o site logado]
+        Verifica --> |Informações não encontrada ou incorretas| MensagemDeErroLogin[Aparece botões para poder tentar novamente ou criar conta]
+    end
+    
     MensagemDeErroLogin-->InserirInfos;
     MensagemDeErroLogin-->RedirectRegistro[Entrar no processo de registro];
 ```
@@ -101,15 +121,25 @@ Com todos os pontos em ordem iniciamos o processo de faturamento
 ## Diagrama
 ```mermaid
 graph TD;
-
-    InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
-    EscolherProduto --> Carrinho[Carrinho]
-    Carrinho --> VerificaExistenciaConta{Possui Conta?}
-    VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
-    VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
-    Cadastrar --> Negociar
-    Negociar --> ProcessoFaturamento[Inicio do processo de Faturamento]
-    ProcessoFaturamento --> FimVenda[Fim]
+    subgraph Comprador["Comprador"]
+        InicioVenda[Início processo de venda] --> EscolherProduto[Escolher Produto]
+        EscolherProduto --> Carrinho[Carrinho]
+    end
+    
+    subgraph Sistema["Sistema"]
+        Carrinho --> VerificaExistenciaConta{Possui Conta?}
+        VerificaExistenciaConta -- Não --> Cadastrar[Criar conta]
+    end
+    
+    subgraph Interacao["Interação Comprador-Vendedor"]
+        VerificaExistenciaConta -- Sim --> Negociar[Negociação com o Vendedor]
+        Cadastrar --> Negociar
+    end
+    
+    subgraph Plataforma["Plataforma"]
+        Negociar --> ProcessoFaturamento[Inicio do processo de Faturamento]
+        ProcessoFaturamento --> FimVenda[Fim]
+    end
 ```
 
 # Processo de Faturamento 
@@ -130,17 +160,33 @@ Quando a segunda parte do valor é paga o vendedor envia o produto, após a conf
 ## Diagrama
 ```mermaid
 graph TD;
-
-    Fat[Faturamento]-->PagamentoInicial[Comprador escolhe a forma de pagamento e faz o pagamento inicial]
-    PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
-    InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
-    FimDoDev --> SolcitacaoPagamentoParte2{Comprador é solicitado para o pagamento da segund parte do valor do produto}
-    SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
-    SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[ Inicio do processo de cancelamento]
-    EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
-    PagamentoAoVendedor--> Avaliacao[Avaliação]
-Avaliacao--> Fim[Fim]
-    CancelamentoPorNaoPagamento --> Fim
+    subgraph Inicio["Plataforma"]
+        Fat[Faturamento]-->PagamentoInicial[Comprador escolhe a forma de pagamento e faz o pagamento inicial]
+    end
+    
+    subgraph Comprador["Comprador"]
+        PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
+    end
+    
+    subgraph Vendedor["Vendedor"]
+        InicioDoDesenvolvimento--> FimDoDev[Aviso de Desenvolvimento Finalizado]
+    end
+    
+    subgraph Sistema["Sistema"]
+        FimDoDev --> SolcitacaoPagamentoParte2{Comprador é solicitado para o pagamento da segund parte do valor do produto}
+    end
+    
+    subgraph ProcessoComprador["Ações do Comprador"]
+        SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
+        SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[Inicio do processo de cancelamento]
+    end
+    
+    subgraph Confirmacao["Confirmação e Fechamento"]
+        EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
+        PagamentoAoVendedor--> Avaliacao[Avaliação]
+        Avaliacao--> Fim[Fim]
+        CancelamentoPorNaoPagamento --> Fim
+    end
 ```
 
 
@@ -155,10 +201,17 @@ No processo de avaliação nós enviamos um formulário para o comprador, após 
 ## Diagrama
 ```mermaid
 graph TD;
-
-    A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre o Produto, Vendedor e Plataforma]
-    B --> C[Dados obtidos]
-    C --> D[Fim]
+    subgraph Sistema["Sistema"]
+        A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre o Produto, Vendedor e Plataforma]
+    end
+    
+    subgraph Comprador["Comprador"]
+        B --> C[Dados obtidos]
+    end
+    
+    subgraph Plataforma["Plataforma"]
+        C --> D[Fim]
+    end
 ```
 
 # Processo de Cancelamento
@@ -173,14 +226,24 @@ Caso o solicitante seja o próprio comprador então o valor pago da primeira par
    
 ```mermaid
 graph TD;
-
-    A[Início: Solicitação de Cancelamento] --> B{Vendedor quem solicitou?}
-    B --> |Sim| C[Notificação para o comprador]
-    B --> |Não| D[Notificação para o vendedor]
-    C --> E[O valor é extornado para o cliente]
-    D --> F[Valor da metade inicial é pago ao vendedor]
-    F --> Final[Fim da transação]
-    E --> Final
+    subgraph Inicio["Qualquer Parte"]
+        A[Início: Solicitação de Cancelamento] --> B{Vendedor quem solicitou?}
+    end
+    
+    subgraph Sistema["Sistema"]
+        B --> |Sim| C[Notificação para o comprador]
+        B --> |Não| D[Notificação para o vendedor]
+    end
+    
+    subgraph Plataforma["Plataforma"]
+        C --> E[O valor é extornado para o cliente]
+        D --> F[Valor da metade inicial é pago ao vendedor]
+    end
+    
+    subgraph Finalizacao["Finalização"]
+        F --> Final[Fim da transação]
+        E --> Final
+    end
 ```
 
 # Processo de Mudança de Tipo de Conta
@@ -198,13 +261,23 @@ E por fim o vendedor deve escolher pelo menos uma área de atuação.
    
 ```mermaid
 graph TD;
-
-    A[Mudança de conta] --> B[Solicitação de alteração de conta consumidor para vendedor]
-    B --> C[Solicitação de informações técnica]
-    C --> D[Solicitação de informações bancarias]
-    D --> E[Inserir portfolio]
-    E --> F[Escolha categoria de atuação]
-    F --> G[Operação realizada]
+    subgraph Usuario["Usuário"]
+        A[Mudança de conta] --> B[Solicitação de alteração de conta consumidor para vendedor]
+    end
+    
+    subgraph Plataforma["Plataforma"]
+        B --> C[Solicitação de informações técnica]
+    end
+    
+    subgraph UsuarioVendedor["Usuário (Futuro Vendedor)"]
+        C --> D[Solicitação de informações bancarias]
+        D --> E[Inserir portfolio]
+        E --> F[Escolha categoria de atuação]
+    end
+    
+    subgraph Sistema["Sistema"]
+        F --> G[Operação realizada]
+    end
 ```
 # Processo de Cadastro de Produto
 
@@ -220,19 +293,27 @@ O processo de cadastro de produto permite que o vendedor registre novos produtos
    - Preço
    - Porcentagem de comissão para a plataforma
    - Imagens do produto
+   - Opções de estoque (caso aplicável)
 4. O sistema valida os dados inseridos.
 5. Caso os dados sejam válidos, o produto é cadastrado com sucesso e passa a ficar disponível na plataforma.
 6. Caso haja alguma inconsistência, o sistema exibe uma mensagem de erro e solicita a correção das informações.
 
+
 ## Diagrama
 ```mermaid
 graph TD;
-    A[Início do Cadastro de Produto] --> B[Acesso do vendedor à plataforma]
-    B --> C[Abertura da tela de cadastro de produtos]
-    C --> D[Preenchimento das informações do produto]
-    D --> E{Validação das informações}
-    E -->|Válido| F[Produto cadastrado com sucesso]
-    E -->|Inválido| G[Erro exibido e solicita correção]
+    subgraph Vendedor["Vendedor"]
+        A[Início do Cadastro de Produto] --> B[Acesso do vendedor à plataforma]
+        B --> C[Abertura da tela de cadastro de produtos]
+        C --> D[Preenchimento das informações do produto]
+    end
+    
+    subgraph Sistema["Sistema"]
+        D --> E{Validação das informações}
+        E -->|Válido| F[Produto cadastrado com sucesso]
+        E -->|Inválido| G[Erro exibido e solicita correção]
+    end
+    
     G --> D
     F --> H[Fim]
 ```
