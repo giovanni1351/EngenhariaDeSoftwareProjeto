@@ -13,32 +13,11 @@
 
 ## Metodologia Ágil Recomendada
 
-Após análise detalhada do documento fornecido para o projeto TechSales, a metodologia ágil mais adequada seria o **Scrum** combinado com elementos do **Kanban**.
+Nosso grupo concordou com o uso do **Scrum** e do **Kanban**
 
-### Justificativa para o Scrum:
+### Justificativa:
 
-1. **Complexidade do projeto:** O TechSales possui múltiplos processos interconectados (cadastro, venda, faturamento, avaliação, etc.) que se beneficiariam da divisão em sprints.
-
-2. **Iterações e incrementos:** O desenvolvimento pode ser organizado em sprints de 2-3 semanas, permitindo entregas incrementais de funcionalidades.
-
-3. **Transparência e adaptabilidade:** As reuniões diárias (Daily Scrums) facilitariam a identificação de obstáculos no desenvolvimento das várias telas e funcionalidades.
-
-4. **Backlog priorizado:** Permite organizar as funcionalidades em ordem de importância para o negócio, começando pelas essenciais (cadastro, login, venda).
-
-### Elementos do Kanban a incorporar:
-
-1. **Visualização do fluxo de trabalho:** Útil para acompanhar o desenvolvimento das múltiplas telas e processos.
-
-2. **Limitação do trabalho em progresso (WIP):** Ajuda a evitar sobrecarga da equipe ao trabalhar em múltiplas funcionalidades.
-
-3. **Métricas visuais:** Facilita o acompanhamento do progresso e identificação de gargalos.
-
-### Por que não as outras metodologias:
-
-- **Cascata:** Muito rígido para um marketplace que precisará se adaptar às necessidades de vendedores e compradores.
-- **Desenvolvimento incremental puro:** Faltaria a estrutura de papéis e eventos do Scrum.
-- **Prototipação:** Seria útil apenas para a interface, mas insuficiente para o processo completo.
-- **XP:** Algumas práticas são úteis (programação em pares, TDD), mas o foco extremo em código poderia negligenciar aspectos de design e experiência do usuário cruciais para um marketplace.
+Escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o acompanhamento do fluxo de trabalho e evolução. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada
 
 ## Stakeholders do Sistema
 
