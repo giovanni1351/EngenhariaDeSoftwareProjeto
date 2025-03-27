@@ -24,32 +24,26 @@ Escolhemos essas metodologias por que com a divisão do trabalho em sprints e hi
 ### 1. Compradores/Consumidores
 - **Impacto:** Usuários que buscam produtos/serviços de tecnologia na plataforma.
 - **Interesses:** Interface intuitiva, segurança nas transações, comunicação eficiente com vendedores, avaliações confiáveis.
-- **Riscos:** Fraudes, produtos de baixa qualidade, dificuldade de uso da plataforma.
 
 ### 2. Vendedores/Anunciantes
 - **Impacto:** Profissionais ou empresas que oferecem produtos/serviços tecnológicos.
 - **Interesses:** Visibilidade, ferramentas de análise, facilidade para cadastrar produtos, sistema de pagamento confiável.
-- **Riscos:** Exposição limitada, complexidade no cadastro, atrasos nos pagamentos.
 
 ### 3. Administradores da Plataforma
 - **Impacto:** Responsáveis pela gestão da plataforma.
 - **Interesses:** Métricas de desempenho, ferramentas de moderação, cadastro de categorias.
-- **Riscos:** Complexidade operacional, dificuldade em monitorar transações.
 
 ### 4. Investidores/Proprietários
 - **Impacto:** Financiadores e proprietários do negócio.
 - **Interesses:** Lucratividade, crescimento, integridade operacional.
-- **Riscos:** Baixo retorno sobre investimento, falhas de segurança.
 
 ### 5. Equipe de Suporte
 - **Impacto:** Funcionários que lidam com problemas e dúvidas dos usuários.
 - **Interesses:** Ferramentas eficientes para resolução de problemas.
-- **Riscos:** Sobrecarga de trabalho, ferramentas inadequadas.
 
 ### 6. Reguladores/Órgãos Fiscalizadores
 - **Impacto:** Entidades que regulam o comércio eletrônico.
 - **Interesses:** Conformidade legal, proteção ao consumidor.
-- **Riscos:** Não conformidade com regulamentações.
 
 ## Técnica de Coleta de Requisitos
 
