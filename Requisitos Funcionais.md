@@ -38,6 +38,8 @@
 - **RF25:** O sistema deve exibir as compras realizadas pelo usuário.
 - **RF26:** O sistema deve permitir que o usuário filtre o produto do histórico de compras.
 - **RF37:** O sistema deve notificar as novidades do site, caso o cliente cadastre seu email no newsletter.
+- **RF37:** O sistema deve ser capaz de realizar filtros por meio das avaliações.
+
 
 ## 5) Cadastro de produtos
 
