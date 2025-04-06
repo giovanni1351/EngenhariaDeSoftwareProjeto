@@ -205,15 +205,22 @@ No processo de avaliação nós enviamos um formulário para o comprador, após 
 ```mermaid
 graph TD;
     subgraph Sistema["Sistema"]
-        A[1 Mês após o uso do projeto desenvolvido] --> B[Envio do formulário questionando sobre o Produto, Vendedor e Plataforma]
+        A[Envio do formulário questionando sobre o Produto, Vendedor e Plataforma] --> B{Comprador Respondeu?}
+        B --> |Não| F[Sistema aguarda 30 dias e reeenvia o formulário]
+        F --> G{Comprador Respondeu?}
+        
+        
     end
     
     subgraph Comprador["Comprador"]
-        B --> C[Dados obtidos]
+        B -->|Sim| C[Dados obtidos]
+        
     end
     
     subgraph Plataforma["Plataforma"]
         C --> D[Fim]
+        G -->|Sim| C
+        G -->|Não| D
     end
 ```
 
