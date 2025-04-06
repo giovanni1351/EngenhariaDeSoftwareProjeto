@@ -166,6 +166,8 @@ graph TD;
     
     subgraph Comprador["Comprador"]
         PagamentoInicial --> InicioDoDesenvolvimento[Vendedor ou Prestador de serviço começa o desenvolvimento da aplicação]
+        SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
+        SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[Inicio do processo de cancelamento]
     end
     
     subgraph Vendedor["Vendedor"]
@@ -174,19 +176,20 @@ graph TD;
     
     subgraph Sistema["Sistema"]
         FimDoDev --> SolcitacaoPagamentoParte2{Comprador é solicitado para o pagamento da segund parte do valor do produto}
+        Avaliacao-->|Não| VerificaDataCompra{Verifica 30 dias da compra}
+        VerificaDataCompra-->|Sim| EnviarAvaliação[Email enviado para Verificação para o usuario]
+        EnviarAvaliação --> Avaliacao
     end
     
-    subgraph ProcessoComprador["Ações do Comprador"]
-        SolcitacaoPagamentoParte2 --> |Pagamento é realizado|EntregaProd[Produto é entrege para o consumidor]
-        SolcitacaoPagamentoParte2 -->|Pagamento não realizado| CancelamentoPorNaoPagamento[Inicio do processo de cancelamento]
-    end
     
     subgraph Confirmacao["Confirmação e Fechamento"]
-        EntregaProd -->|Comprador confirma recebimento| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
-        PagamentoAoVendedor--> Avaliacao[Avaliação]
-        Avaliacao--> Fim[Fim]
+        EntregaProd -->|Comprador confirma recebimento do produto| PagamentoAoVendedor[Vendedor recebe o valor, apos confirmação]
+        PagamentoAoVendedor--> Avaliacao{Avaliação feita?}
+        Avaliacao-->|Sim| Fim[Fim]
+
         CancelamentoPorNaoPagamento --> Fim
     end
+
 ```
 
 
@@ -226,6 +229,9 @@ Caso o solicitante seja o próprio comprador então o valor pago da primeira par
    
 ```mermaid
 graph TD;
+    subgraph Cancelamento["Cancelamento"]
+    end
+
     subgraph Inicio["Qualquer Parte"]
         A[Início: Solicitação de Cancelamento] --> B{Vendedor quem solicitou?}
     end
@@ -234,7 +240,9 @@ graph TD;
         B --> |Sim| C[Notificação para o comprador]
         B --> |Não| D[Notificação para o vendedor]
     end
-    
+    subgraph Vendedor["Vendedor"]
+        Atrazo[Vendedor não entregou dentro do prazo] --> C
+    end
     subgraph Plataforma["Plataforma"]
         C --> E[O valor é extornado para o cliente]
         D --> F[Valor da metade inicial é pago ao vendedor]

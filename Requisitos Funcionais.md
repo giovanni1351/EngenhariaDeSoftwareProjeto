@@ -17,9 +17,15 @@
 
 ## 3) Pagamento
 
+** Confirmar com a Gabriela **(
+- **RF10:** O sistema deve processar o pagamento da primeira etapa referente ao produto e reter o montante correspondente na plataforma até a confirmação da entrega pelo comprador.
+- **RF11:** O sistema deve processar o pagamento da segunda etapa, calcular o valor líquido a ser repassado ao vendedor (deduzindo a comissão da plataforma do valor total) e efetuar a liberação do montante após a confirmação da entrega pelo comprador.
+)
+
+
 - **RF10:** O sistema deve processar pagamentos em duas etapas.
 - **RF11:** O sistema deve reter valores até a confirmação da entrega.
-- **RF12:** O sistema deve transferir valores para a conta do vendedor após confirmação.
+- **RF12:** O sistema deve transferir o valor da venda para a conta do vendedor, deduzida a comissão da plataforma, após a confirmação de entrega pelo comprador.
 - **RF13:** O sistema deve gerar comprovantes de pagamento.
 - **RF14:** O sistema deve permitir que o usuário cadastre as informações do cartão.
 - **RF15:** O sistema deve permitir que o usuário escolha diferentes formas de pagamento, exemplo: cartão de crédito, transferência bancária e PIX.
@@ -54,7 +60,7 @@
 
 ## 7) Avaliação
 
-- **RF32:** O sistema deve enviar formulário de avaliação um mês após a compra do produto.
+- **RF32:** O sistema deve enviar formulário de avaliação 30 dia após a compra do produto, caso o cliente ainda não tenha avaliado.
 
 ## 8) Cancelamento
 
