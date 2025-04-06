@@ -60,7 +60,7 @@
 
 ## 7) Avaliação
 
-- **RF32:** O sistema deve enviar formulário de avaliação 30 dia após a compra do produto, caso o cliente ainda não tenha avaliado.
+- **RF32:** O sistema deve enviar dois formulários de avaliação, um imediamente após a compra do produto e outro 30 dias após a compra do produto, caso o comprador não tenha feito a avaliação
 
 ## 8) Cancelamento
 
