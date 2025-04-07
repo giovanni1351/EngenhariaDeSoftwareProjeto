@@ -38,9 +38,7 @@
 - **RF19:** O sistema deve permitir que compradores visualizem detalhes dos produtos.
 - **RF20:** O sistema deve exibir os produtos em destaque.
 - **RF21:** O sistema deve permitir que o usuário filtre os produtos por categoria.
-- **RF22:** O sistema deve permitir avaliação do produto, vendedor e plataforma.
-- **RF23:** O sistema deve permitir comentários sobre produtos e vendedores.
-- **RF24:** O sistema deve exibir as avaliações e comentários.
+- **RF24:** O sistema deve exibir as avaliações.
 - **RF25:** O sistema deve exibir as compras realizadas pelo usuário.
 - **RF26:** O sistema deve permitir que o usuário filtre o produto do histórico de compras.
 - **RF37:** O sistema deve notificar as novidades do site, caso o cliente cadastre seu email no newsletter.
@@ -60,6 +58,7 @@
 
 ## 7) Avaliação
 
+- **RF22:** O sistema deve permitir avaliação do produto, vendedor e plataforma.
 - **RF32:** O sistema deve enviar dois formulários de avaliação, um imediamente após a compra do produto e outro 30 dias após a compra do produto, caso o comprador não tenha feito a avaliação
 
 ## 8) Cancelamento
