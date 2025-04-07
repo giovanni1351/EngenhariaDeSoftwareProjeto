@@ -11,13 +11,9 @@
 8. [Histórias de Usuário](#histórias-de-usuário)
 9. [Conclusão](#conclusão)
 
-## Metodologia Ágil Recomendada
+## Metodologia Ágil: 
 
-Nosso grupo concordou com o uso do **Scrum** e do **Kanban**
-
-### Justificativa:
-
-Escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o acompanhamento do fluxo de trabalho e evolução. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada
+A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o acompanhamento do fluxo de trabalho e evolução. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada
 
 ## Stakeholders do Sistema
 
