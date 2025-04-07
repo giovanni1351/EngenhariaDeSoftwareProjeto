@@ -51,13 +51,14 @@
 - **RF30:** O sistema deve permitir o upload de imagens para os produtos.
 - **RF31:** O sistema deve permitir a edição e remoção de produtos cadastrados.
 
-## 7) Avaliação
+## 6) Avaliação
 
 - **RF32:** O sistema deve permitir avaliação do produto, vendedor e plataforma.
 - **RF33:** O sistema deve enviar dois formulários de avaliação, um imediamente após a compra do produto e outro 30 dias após a compra do produto, caso o comprador não tenha feito a avaliação
 
-## 8) Cancelamento
+## 7) Cancelamento
 
 - **RF34:** O sistema deve permitir solicitações de cancelamento por compradores ou vendedores.
 - **RF35:** O sistema deve processar reembolsos ou pagamentos conforme a origem do cancelamento.
 - **RF36:** O sistema deve notificar as partes envolvidas sobre o cancelamento.
+
