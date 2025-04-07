@@ -48,7 +48,6 @@
 - **RNFX:** O sistema deve atualizar as informações diretamento no banco de dados em menos de 2 segundos
 - **RNFX:** O sistema deve verificar a data das entregas todos os dias para o envio dos formularios de avaliação
 - **RNFX:** O sistema deve enviar um e-mail ao usuário comprador 30 dias após a data da compra, caso a avaliação correspondente ainda não tenha sido realizada.
-- **RNFX:** O sistema deve armazenar os comentarios dos produtos 
 - **RNFX:** O sistema deve armazenar as avaliações e utilizar para algoritmos de recomendação
 - **RNFX:** O sistema deve ser capas de realizar filtros por meio das avaliações
 - **RNFX:** O sistema deve calcular juros para parcelamentos para certa quantidade de vezes
