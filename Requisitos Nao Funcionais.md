@@ -32,17 +32,17 @@
     - Cadastro, Login ou Logout realizado
 - **RNF21:** O sistema deve notificar o comprador sobre uma venda em até 5 segundos após a confirmação da compra.
 - **RNF22:** O sistema deve possuir o calculo para a validação do CPF fornecido pelo usuário é válido.
-- **RNF23:** O sistema deve validar a existencia da conta bancaria do usuario vendedor
-- **RNF24:** O sistema deve validar as informações do cartão de credito do comprador
-- **RNF25:** O sistema deve aceitar varios metodos de pagamento
-- **RNF26:**  O sistema deve verificar a nova senha com a anterior para realizar a troca de senha
-- **RNF27:** O sistema tem que conter sistema de aramazenamento de arquivos, para guardar os portifolios dos vendedores
-- **RNF28:** O sistema deve atualizar as informações diretamento no banco de dados em menos de 2 segundos
-- **RNF29:** O sistema deve verificar a data das entregas todos os dias para o envio dos formularios de avaliação
+- **RNF23:** O sistema deve validar a existencia da conta bancaria do usuario vendedor.
+- **RNF24:** O sistema deve validar as informações do cartão de credito do comprador.
+- **RNF25:** O sistema deve aceitar varios metodos de pagamento.
+- **RNF26:**  O sistema deve verificar a nova senha com a anterior para realizar a troca de senha.
+- **RNF27:** O sistema tem que conter sistema de aramazenamento de arquivos, para guardar os portifolios dos vendedores.
+- **RNF28:** O sistema deve atualizar as informações diretamento no banco de dados em menos de 2 segundos.
+- **RNF29:** O sistema deve verificar a data das entregas todos os dias para o envio dos formularios de avaliação.
 - **RNF30:** O sistema deve enviar um e-mail ao usuário comprador 30 dias após a data da compra, caso a avaliação correspondente ainda não tenha sido realizada.
-- **RNF31:** O sistema deve armazenar as avaliações e utilizar para algoritmos de recomendação
-- **RNF32:** O sistema deve ser capas de realizar filtros por meio das avaliações
-- **RNF33:** O sistema deve calcular juros para parcelamentos para certa quantidade de vezes
+- **RNF31:** O sistema deve armazenar as avaliações e utilizar para algoritmos de recomendação.
+- **RNF32:** O sistema deve ser capas de realizar filtros por meio das avaliações.
+- **RNF33:** O sistema deve calcular juros para parcelamentos para certa quantidade de vezes.
 - **RNF34:** O sistema deve retornar uma pesquisa feita pelo usuário em 2 segundos.
 - **RNF35:** O sistema deve carregar a página do site em menos de 3 segundos.
 - **RNF36:** O sistema deve processar pagamentos em menos de 10 segundos.
