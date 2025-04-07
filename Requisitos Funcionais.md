@@ -18,9 +18,11 @@
 
 ## 3) Pagamento
 
-** Confirmar com a Gabriela **(
+** Confirmar com a Gabriela **
+(
 - **RF11:** O sistema deve processar o pagamento da primeira etapa referente ao produto e reter o montante correspondente na plataforma até a confirmação da entrega pelo comprador.
 - **RF12:** O sistema deve processar o pagamento da segunda etapa, calcular o valor líquido a ser repassado ao vendedor (deduzindo a comissão da plataforma do valor total) e efetuar a liberação do montante após a confirmação da entrega pelo comprador.
+
 )
 
 
