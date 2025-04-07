@@ -3,7 +3,7 @@
 
 ### Gerais
 - RN01: Todo usuário inicialmente é registrado como comprador.
-- RNX: Todo usuario tem que se registrar com as seguintes informações:
+- RN02: Todo usuario tem que se registrar com as seguintes informações:
 Aqui está a lista de todos os campos do formulário de cadastro:
     - Nome Completo
     - CPF
@@ -19,18 +19,18 @@ Aqui está a lista de todos os campos do formulário de cadastro:
     - Complemento (opcional)
     - Bairro
 
-- RN02: Para se tornar vendedor, o usuário deve fornecer informações técnicas, bancárias e portfólio.
-- RN03: Um mesmo usuário não pode comprar e avaliar seus próprios produtos.
+- RN03: Para se tornar vendedor, o usuário deve fornecer informações técnicas, bancárias e portfólio.
+- RN04: Um mesmo usuário não pode comprar e avaliar seus próprios produtos.
 
 
 ### Anúncios e Comissões
-- RN04: O vendedor define a porcentagem de comissão para a plataforma valor minimo de 5%.
-- RN05: Produtos com maior porcentagem de comissão recebem maior destaque na plataforma (produtos em destaque).
+- RN05: O vendedor define a porcentagem de comissão para a plataforma valor minimo de 5%.
+- RN06: Produtos com maior porcentagem de comissão recebem maior destaque na plataforma (produtos em destaque).
 - RN07: Produtos com boa média de vendas e alta confiabilidade ganham espaço no painel de produtos confiaveis.
 
 ### Pagamentos e Faturamento
 ** Confirmar com a Gabriela **(
-- RNx: O pagamento deve ser processado em duas etapas, o valor da primeira etapa será retida até a confirmação da segunda etapa 
+- RNX: O pagamento deve ser processado em duas etapas, o valor da primeira etapa será retida até a confirmação da segunda etapa 
 
 - RNx: O valor da comissão será descontada do valor final pago, após a confirmação da segunda etapa
 )
