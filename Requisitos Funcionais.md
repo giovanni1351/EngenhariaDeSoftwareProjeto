@@ -37,12 +37,11 @@
 - **RF18:** O sistema deve permitir adicionar produtos ao carrinho de compras.
 - **RF19:** O sistema deve permitir que compradores visualizem detalhes dos produtos.
 - **RF20:** O sistema deve exibir os produtos em destaque.
-- **RF21:** O sistema deve permitir que o usuário filtre os produtos por categoria.
+- **RF21:** O sistema deve permitir que o usuário filtre os produtos por categoria e avaliação.
 - **RF24:** O sistema deve exibir as avaliações.
 - **RF25:** O sistema deve exibir as compras realizadas pelo usuário.
 - **RF26:** O sistema deve permitir que o usuário filtre o produto do histórico de compras.
 - **RF37:** O sistema deve notificar as novidades do site, caso o cliente cadastre seu email no newsletter.
-- **RF37:** O sistema deve ser capaz de realizar filtros por meio das avaliações.
 
 
 ## 5) Cadastro de produtos
