@@ -30,16 +30,12 @@ Aqui está a lista de todos os campos do formulário de cadastro:
 
 ### Pagamentos e Faturamento
 
-- RNX: O pagamento deve ser processado em duas etapas, o valor da primeira etapa será retida até a confirmação da segunda etapa. 
-
-- RNx: O valor da comissão será descontada do valor final pago, após a confirmação da segunda etapa
-
-# Arrumar n esquece
 - RN08: Todo pagamento é dividido em duas etapas (metade inicial, metade final).
-- RN09: A metade inicial é retida pela plataforma até a conclusão da venda.
+- RNX:O valor da primeira etapa será retida até a confirmação da segunda etapa.
 - RN10: A segunda metade só é solicitada após o vendedor finalizar o desenvolvimento/preparação.
+- RNx: O valor da comissão será descontada do valor final pago, após a confirmação da segunda etapa
 - RN11: O valor é liberado para o vendedor somente após confirmação de entrega pelo comprador.
-- RN12: A plataforma retém a porcentagem acordada antes de repassar o valor ao vendedor.
+
 
 ### Cancelamentos
 - RN13: Se o vendedor solicitar cancelamento, o valor pago é estornado integralmente ao comprador.

@@ -13,58 +13,38 @@
 
 ## Metodologia Ágil: 
 
-A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o acompanhamento do fluxo de trabalho e evolução. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada
+A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o monitoramento e controle do fluxo de trabalho. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada, priorizando o feedback contínuo do cliente, que é coletado e integrado ao longo do projeto, com o apoio de protótipos, garantindo que o produto final atenda às reais necessidades e expectativas.
+
+
 
 ## Stakeholders do Sistema
 
-### 1. Compradores/Consumidores
-- **Impacto:** Usuários que buscam produtos/serviços de tecnologia na plataforma.
-- **Interesses:** Interface intuitiva, segurança nas transações, comunicação eficiente com vendedores, avaliações confiáveis.
+### 1. Compradores
+- **Impacto:** Nossa plataforma irá oferecer aos compradores uma grande variedade de produtos/serviços de tecnologia com segurança, interface intuitiva e avaliações confiáveis.
 
-### 2. Vendedores/Anunciantes
-- **Impacto:** Profissionais ou empresas que oferecem produtos/serviços tecnológicos.
-- **Interesses:** Visibilidade, ferramentas de análise, facilidade para cadastrar produtos, sistema de pagamento confiável.
+### 2. Vendedores
+- **Impacto:** A plataforma proporcionará visibilidade e segurança para profissionais que oferecem produtos ou serviços tecnológicos, permitindo ampliar sua base de clientes e fortalecer sua presença digital.
 
-### 3. Administradores da Plataforma
-- **Impacto:** Responsáveis pela gestão da plataforma.
-- **Interesses:** Métricas de desempenho, ferramentas de moderação, cadastro de categorias.
+### 3. Anunciantes
+- **Impacto:** Através do nosso branding, a plataforma se tornará um ambiente estratégico para anúncios, oferecendo visibilidade qualificada para marcas interessadas no público-alvo do setor tecnológico.
 
-### 4. Investidores/Proprietários
-- **Impacto:** Financiadores e proprietários do negócio.
-- **Interesses:** Lucratividade, crescimento, integridade operacional.
 
-### 5. Equipe de Suporte
-- **Impacto:** Funcionários que lidam com problemas e dúvidas dos usuários.
-- **Interesses:** Ferramentas eficientes para resolução de problemas.
-
-### 6. Reguladores/Órgãos Fiscalizadores
-- **Impacto:** Entidades que regulam o comércio eletrônico.
-- **Interesses:** Conformidade legal, proteção ao consumidor.
 
 ## Técnica de Coleta de Requisitos
 
-Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **combinação de workshops de requisitos com entrevistas direcionadas e prototipação**.
+Para o TechSales, a técnica mais adequada para coleta de requisitos seria a combinação de Prototipação, questionário e Brainstorming.
 
 ### Justificativa:
 
 1. **Prototipação:**
-   - Será útil para validar os visuáis e também colher feedbacks sobre o desenvolvimento
+   - Será útil para desenvolver protótipos visuais e também colher feedbacks sobre o desenvolvimento.
 
 2. **Questionários**
-   - Questionários direcionados para vendedores e compradores de plataformas semelhantes. 
-Será útil para entender as necessidades de cada um, e também oferecer uma plataforma melhor para ambos os lados
+   - Questionários direcionados para vendedores e compradores de plataformas semelhantes. Será útil para entender as necessidades de cada um, e também oferecer uma plataforma melhor para ambos.
 
 3. **Brainstorming**
-   - Reuniões com a equipe para organizar e propor ideias e soluções
+   - Reuniões com a equipe para organizar e propor ideias e soluções da plataforma.
      
-### Processo de Coleta:
-
-1. Iniciar com workshops para entender processos de negócio macro.
-2. Realizar entrevistas individuais com representantes de cada stakeholder.
-3. Desenvolver protótipos baseados nas informações coletadas.
-4. Validar protótipos em sessões de feedback com stakeholders.
-5. Refinar requisitos com base no feedback.
-6. Documentar requisitos no formato de histórias de usuário para o backlog.
 
 ## Requisitos Funcionais
 
