@@ -17,29 +17,16 @@ A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias 
 
 ## Stakeholders do Sistema
 
-### 1. Compradores/Consumidores
-- **Impacto:** Usuários que buscam produtos/serviços de tecnologia na plataforma.
-- **Interesses:** Interface intuitiva, segurança nas transações, comunicação eficiente com vendedores, avaliações confiáveis.
+### 1. Compradores
+- **Impacto:** Nossa plataforma irá oferecer aos compradores uma grande variedade de produtos/serviços de tecnologia com segurança, interface intuitiva e avaliações confiáveis.
 
-### 2. Vendedores/Anunciantes
-- **Impacto:** Profissionais ou empresas que oferecem produtos/serviços tecnológicos.
-- **Interesses:** Visibilidade, ferramentas de análise, facilidade para cadastrar produtos, sistema de pagamento confiável.
+### 2. Vendedores
+- **Impacto:** A plataforma proporcionará visibilidade e segurança para profissionais que oferecem produtos ou serviços tecnológicos, permitindo ampliar sua base de clientes e fortalecer sua presença digital.
 
-### 3. Administradores da Plataforma
-- **Impacto:** Responsáveis pela gestão da plataforma.
-- **Interesses:** Métricas de desempenho, ferramentas de moderação, cadastro de categorias.
+### 3. Anunciantes
+- **Impacto:** Através do nosso branding, a plataforma se tornará um ambiente estratégico para anúncios, oferecendo visibilidade qualificada para marcas interessadas no público-alvo do setor tecnológico.
 
-### 4. Investidores/Proprietários
-- **Impacto:** Financiadores e proprietários do negócio.
-- **Interesses:** Lucratividade, crescimento, integridade operacional.
 
-### 5. Equipe de Suporte
-- **Impacto:** Funcionários que lidam com problemas e dúvidas dos usuários.
-- **Interesses:** Ferramentas eficientes para resolução de problemas.
-
-### 6. Reguladores/Órgãos Fiscalizadores
-- **Impacto:** Entidades que regulam o comércio eletrônico.
-- **Interesses:** Conformidade legal, proteção ao consumidor.
 
 ## Técnica de Coleta de Requisitos
 
