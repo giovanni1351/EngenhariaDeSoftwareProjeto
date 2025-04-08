@@ -29,11 +29,11 @@ Aqui está a lista de todos os campos do formulário de cadastro:
 - RN07: Produtos com boa média de vendas e alta confiabilidade ganham espaço no painel de produtos confiaveis.
 
 ### Pagamentos e Faturamento
-** Confirmar com a Gabriela **(
-- RNX: O pagamento deve ser processado em duas etapas, o valor da primeira etapa será retida até a confirmação da segunda etapa 
+
+- RNX: O pagamento deve ser processado em duas etapas, o valor da primeira etapa será retida até a confirmação da segunda etapa. 
 
 - RNx: O valor da comissão será descontada do valor final pago, após a confirmação da segunda etapa
-)
+
 # Arrumar n esquece
 - RN08: Todo pagamento é dividido em duas etapas (metade inicial, metade final).
 - RN09: A metade inicial é retida pela plataforma até a conclusão da venda.
