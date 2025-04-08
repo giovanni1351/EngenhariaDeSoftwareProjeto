@@ -30,28 +30,19 @@ A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias 
 
 ## Técnica de Coleta de Requisitos
 
-Para o TechSales, a técnica mais adequada para coleta de requisitos seria a **combinação de workshops de requisitos com entrevistas direcionadas e prototipação**.
+Para o TechSales, a técnica mais adequada para coleta de requisitos seria a combinação de Prototipação, questionário e Brainstorming.
 
 ### Justificativa:
 
 1. **Prototipação:**
-   - Será útil para validar os visuáis e também colher feedbacks sobre o desenvolvimento
+   - Será útil para desenvolver protótipos visuais e também colher feedbacks sobre o desenvolvimento.
 
 2. **Questionários**
-   - Questionários direcionados para vendedores e compradores de plataformas semelhantes. 
-Será útil para entender as necessidades de cada um, e também oferecer uma plataforma melhor para ambos os lados
+   - Questionários direcionados para vendedores e compradores de plataformas semelhantes. Será útil para entender as necessidades de cada um, e também oferecer uma plataforma melhor para ambos.
 
 3. **Brainstorming**
-   - Reuniões com a equipe para organizar e propor ideias e soluções
+   - Reuniões com a equipe para organizar e propor ideias e soluções da plataforma.
      
-### Processo de Coleta:
-
-1. Iniciar com workshops para entender processos de negócio macro.
-2. Realizar entrevistas individuais com representantes de cada stakeholder.
-3. Desenvolver protótipos baseados nas informações coletadas.
-4. Validar protótipos em sessões de feedback com stakeholders.
-5. Refinar requisitos com base no feedback.
-6. Documentar requisitos no formato de histórias de usuário para o backlog.
 
 ## Requisitos Funcionais
 
