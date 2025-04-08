@@ -13,7 +13,9 @@
 
 ## Metodologia Ágil: 
 
-A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o acompanhamento do fluxo de trabalho e evolução. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada
+A metodologia ágil escolhida foi Scrum e Kanban, escolhemos essas metodologias por que com a divisão do trabalho em sprints e histórias de usuário podemos ter uma evolução contínua e organizada, evitando retrabalho e tendo o progresso documentado para que possamos reaproveitar em momentos futuros. Somando isso com quadro Kanban podemos também facilitar o monitoramento e controle do fluxo de trabalho. Dessa forma podemos evoluir de uma maneira mais efetiva, sistemática e organizada, priorizando o feedback contínuo do cliente, que é coletado e integrado ao longo do projeto, com o apoio de protótipos, garantindo que o produto final atenda às reais necessidades e expectativas.
+
+
 
 ## Stakeholders do Sistema
 
