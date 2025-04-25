@@ -28,4 +28,4 @@
 
 # Casos de Uso
 
-![Imagem de exemplo](Imagens/CasosDeUso.png)
+![Imagem de exemplo](Imagens/CasosDeUso(1).png)
