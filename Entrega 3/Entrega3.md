@@ -3,4 +3,4 @@
 
 
 ## Cadastro:
-![Texto alternativo](Imagens/Diagrama de Contexto/Cadastro.png "Título opcional")
+![Imagem de exemplo](Imagens/Diagrama de Contexto/Cadastro.png)
