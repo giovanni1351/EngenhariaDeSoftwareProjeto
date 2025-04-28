@@ -121,7 +121,7 @@
 |-------------|-----|
 |Função|Mudar o tipo de conta de comprador para vendedor|
 |Atores|Comprador e sistema|
-|Pré Condição|Usuario Comprador Logado|
+|Pré Condição|1. Usuário logado <br> 2. Usuário ser do tipo comprador.|
 |Pós Condição|Conta de comprador vira vendedor|
 |Fluxo Principal|1. Comprador acessa a tela de perfil <br>2. Comprador clica no botão "Tornar-se Vendedor" <br> 3. Sistema mostra uma modal com um formulario para preencher as informações de vendedor <br> 4. Comprador preenche informações solicitadas <br> 5. Comprador submete a Solicitação <br> 6. Sistema realiza a mudança do tipo de conta|
 
