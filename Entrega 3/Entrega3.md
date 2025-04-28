@@ -38,7 +38,7 @@
 |Atores|Cliente e Sistema.|
 |Pré Condição|1. Estar logado. <br> 2. Produto cadastrado na plataforma.|
 |Pós Condição|Carrinho atualizado para o cliente|
-|Fluxo Principal|1. Cliente Loga <br >2. Cliente acessa a pagina do produto <br> 3. Cliente clicka no botão de adicionar no carrinho <br> 4. Sistema adiciona no carrinho o produto|
+|Fluxo Principal|1. Cliente Loga <br >2. Cliente acessa a pagina do produto <br> 3. Cliente clica no botão de adicionar no carrinho <br> 4. Sistema adiciona no carrinho o produto|
 |Fluxo Alternativo|1. Cliente Acessa a tela do carrinho <br> 2. Cliente e realiza remoção ou atualização do produto <br> 3. Sistema realiza a tarefa de exclusão ou atualização|
 
 
