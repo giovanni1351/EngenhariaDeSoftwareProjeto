@@ -35,7 +35,7 @@
 |Identificador|UC-01|
 |-------------|-----|
 |Função|Permitir que o cliente consiga fazer o gerenciamento (Inserir, atualizar ou remover ) do carrinho dos produtos.|
-|Atores|Cliente, Sistema.|
+|Atores|Cliente e Sistema.|
 |Pré Condição|1. Estar logado. <br> 2. Produto cadastrado na plataforma.|
 |Pós Condição|Carrinho atualizado para o cliente|
 |Fluxo Principal|1. Cliente Loga <br >2. Cliente acessa a pagina do produto <br> 3. Cliente clicka no botão de adicionar no carrinho <br> 4. Sistema adiciona no carrinho o produto|
@@ -119,9 +119,9 @@
 
 |Identificador|UC-08|
 |-------------|-----|
-|Função|Mudar o tipo de conta de comprador para vendedor|
-|Atores|Comprador e sistema|
-|Pré Condição|1. Usuário logado <br> 2. Usuário ser do tipo comprador.|
+|Função|Mudar o tipo de conta de comprador para vendedor.|
+|Atores|Comprador e sistema.|
+|Pré Condição|1. Usuário logado <br> 2. Usuário ser do tipo comprador|
 |Pós Condição|Conta de comprador vira vendedor|
 |Fluxo Principal|1. Comprador acessa a tela de perfil <br>2. Comprador clica no botão "Tornar-se Vendedor" <br> 3. Sistema mostra uma modal com um formulario para preencher as informações de vendedor <br> 4. Comprador preenche informações solicitadas <br> 5. Comprador submete a Solicitação <br> 6. Sistema realiza a mudança do tipo de conta|
 
