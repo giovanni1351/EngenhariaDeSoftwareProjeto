@@ -110,7 +110,7 @@
 |Atores|Vendedo, Comprador e sistema.|
 |Pré Condição|Compra do produto realizada.|
 |Pós Condição|1. Venda concluida<br> 2. status na tela de historico de vendas do vendedor como concluido<br>3. Segunda etapa do processo de venda realizada|
-|Fluxo Principal|1. Vendedor acessa a pagina de vendas <br> 2. Vendedor clica no botão "Marcar Entregue"<br> 3. Sistema mostra uma modal com os campos para realizar a entregua <br>4. Vendedor faz o upload da entrega <br> 5. Sistema computa entrega<br> 6. Sistema continua fluxo no processo de compra|
+|Fluxo Principal|1. Vendedor acessa a pagina de vendas <br> 2. Vendedor clica no botão "Marcar Entregue"<br> 3. Sistema mostra uma modal com os campos para realizar a entregua <br>4. Vendedor faz o upload da entrega <br> 5. Sistema computa entrega|
 
 
 
