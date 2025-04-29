@@ -1,69 +1,69 @@
 ```mermaid
 classDiagram
     class Comprador {
-        +int id
-        +string nomeCompleto
-        +string cpf
-        +date dataNascimento
-        +string telefone
-        +string email
-        +string senha
-        +bool ativo
-        +string Endereço
+        -id: int
+        -nomeCompleto: string
+        -cpf: string
+        -dataNascimento: date
+        -telefone: string
+        -email: string
+        -senha: string
+        -ativo: bool
+        -Endereço: string
     }
     class Vendedor {
-        +int id
-        +string nomeCompleto
-        +string cpf
-        +date dataNascimento
-        +string telefone
-        +string email
-        +string senha
-        +bool ativo
-        +string Endereço
-        +string infoTecnica
-        +string contaBancaria
-        +string portifolio
-        +string portifolioLink
+        -id: int
+        -nomeCompleto: string
+        -cpf: string
+        -dataNascimento: date
+        -telefone: string
+        -email: string
+        -senha: string
+        -ativo: bool
+        -Endereço: string
+        -infoTecnica: string
+        -contaBancaria: string
+        -portifolio: string
+        -portifolioLink: string
     }
     class Produto {
-        +int id
-        +string nome
-        +string descricaoCurta
-        +string descricaoDetalhada
-        +float preco
-        +float comissao
-        +float desconto
-        +float precoFinal
-        +int prazoEntregaValor
-        +string prazoEntregaUnidade
-        +string inclui
-        +string naoInclui
-        +string requisitosComprador
-        +string categoria
-        +string urlImagem
+        -id: int
+        -nome: string
+        -descricaoCurta: string
+        -descricaoDetalhada: string
+        -preco: float
+        -comissao: float
+        -desconto: float
+        -precoFinal: float
+        -prazoEntregaValor: int
+        -prazoEntregaUnidade: string
+        -inclui: string
+        -naoInclui: string
+        -requisitosComprador: string
+        -categoria: string
+        -urlImagem: string
     }
 
     class Carrinho {
-        +int id
+        -id: int
     }
     class Pedido {
-        +int id
-        +string status
-        +date dataCriacao
+        -id: int
+        -status: string
+        -dataCriacao: date
     }
     class Pagamento {
-        +int id
-        +float valor
-        +string status
-        +date dataPagamento
-        +string formaPagamento
+        -id: int
+        -valor: float
+        -status: string
+        -dataPagamento: date
+        -formaPagamento: string
     }
     class Avaliacao {
-        +int id
-        +int nota
-        +string comentario
-        +date data
+        -id: int
+        -nota: int
+        -comentario: string
+        -data: date
     }
 
     Vendedor "1" --o "*" Produto : cadastra
