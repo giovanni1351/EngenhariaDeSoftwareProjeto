@@ -28,7 +28,7 @@
 
 # Casos de Uso
 
-![Imagem de exemplo](Imagens/CasosDeUso(1).png)
+![Imagem de exemplo](Imagens/casos_de_uso.drawio.png)
 
 ## Caso de uso 1 | UC-01 :   Gerenciar Carrinho
 
