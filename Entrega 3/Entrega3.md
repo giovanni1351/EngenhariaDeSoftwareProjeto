@@ -144,3 +144,26 @@
 |Fluxo Principal|1. Vendedor acessa a tela de cadastro de produto<br> 2. Sistema disponibiliza um formulario para cadastrar as informações <br> 3. Vendedor preenche o formulario <br> 4. Vendedor submete a criação do produto <br> 5. Sistema realiza a operação de criar produto <br> |
 |Fluxo Alternativo 1|1. Vendedor acessa a tela de produtos cadastrados <br> 2. Vendedor seleciona produto para realizar alteração <br> 3. Sistema disponibiliza formulario para mudança <br> 4. Vendedor preenche as informações a serem atualizadas <br> 5. Vendedor submete atualização <br> 6. Sistema realiza a operação de atualizar produto |
 |Fluxo Alternativo 2|1. Vendedor acessa a tela de produtos <br> 2. Vendedor clicka em Excluir <br> 3. Sistema mostra uma tela de confirmação <br> 4. Vendedor confirma <br> 5. Sistema realiza a remoção do produto|
+
+
+## Caso de uso 10 | UC-10 : Visualizar histórico de compras 
+
+|Identificador|UC-10|
+|-------------|-----|
+|Função|Permitir que o comprador visualize seu histórico de compras realizadas na plataforma.|
+|Atores|Comprador|
+|Pré Condição|Comprador deve estar logado.|
+|Pós Condição|Histórico de compras exibido para o comprador.|
+|Fluxo Principal|1. Comprador acessa a área de histórico de compras, clicando em "Minhas compras". <br> 2.  lista de compras realizadas, ordenadas por data mais recente. 
+
+
+## Caso de uso 11 | UC-11 : Visualizar histórico de vendas 
+
+|Identificador|UC-11|
+|-------------|-----|
+|Função|Permitir que o vendedor visualize seu histórico de vendas realizadas na plataforma.|
+|Atores|Vendedor|
+|Pré Condição| Vendedor deve estar logado.|
+|Pós Condição| Histórico de vendas exibido para o vendedor.|
+|Fluxo Principal|1. Vendedor acessa a área de histórico de vendas. <br> 2. Sistema exibe lista de vendas realizadas|
+
