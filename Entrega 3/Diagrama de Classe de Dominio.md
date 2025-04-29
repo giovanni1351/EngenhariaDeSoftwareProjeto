@@ -23,11 +23,8 @@ classDiagram
         +string Endereço
         +string infoTecnica
         +string contaBancaria
-    }
-    class Portfolio {
-        +int id
-        +string descricao
-        +string link
+        +string portifolio
+        +string portifolioLink
     }
     class Produto {
         +int id
@@ -44,12 +41,9 @@ classDiagram
         +string naoInclui
         +string requisitosComprador
         +string categoria
+        +string urlImagem
     }
-    class ImagemProduto {
-        +int id
-        +string url
-        +string descricao
-    }
+
     class Carrinho {
         +int id
     }
@@ -72,9 +66,7 @@ classDiagram
         +date data
     }
 
-    Vendedor "1" --o "*" Portfolio : possui
     Vendedor "1" --o "*" Produto : cadastra
-    Produto "1" --o "*" ImagemProduto : possui
     Comprador "1" --o "1" Carrinho : possui
     Comprador "1" --o "*" Pedido : realiza
     Carrinho "1" --o "*" Pedido : possui
