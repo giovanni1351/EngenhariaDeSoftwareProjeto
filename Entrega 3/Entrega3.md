@@ -165,5 +165,5 @@
 |Atores|Vendedor|
 |Pré Condição| Vendedor deve estar logado.|
 |Pós Condição| Histórico de vendas exibido para o vendedor.|
-|Fluxo Principal|1. Vendedor acessa a área de histórico de vendas. <br> 2. Sistema exibe lista de vendas realizadas|
+|Fluxo Principal|1. Vendedor acessa a área de histórico de vendas, clicando em "Minhas vendas". <br> 2. Sistema exibe lista de vendas realizadas|
 
