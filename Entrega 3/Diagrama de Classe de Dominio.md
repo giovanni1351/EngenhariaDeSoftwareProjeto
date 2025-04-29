@@ -8,16 +8,8 @@ classDiagram
         +string telefone
         +string email
         +string senha
-        +string tipoConta
         +bool ativo
-        +int id
-        +string cep
-        +string estado
-        +string cidade
-        +string rua
-        +string numero
-        +string complemento
-        +string bairro
+        +string Endereço
     }
     class Vendedor {
         +int id
@@ -27,16 +19,8 @@ classDiagram
         +string telefone
         +string email
         +string senha
-        +string tipoConta
         +bool ativo
-        +int id
-        +string cep
-        +string estado
-        +string cidade
-        +string rua
-        +string numero
-        +string complemento
-        +string bairro
+        +string Endereço
         +string infoTecnica
         +string contaBancaria
     }
