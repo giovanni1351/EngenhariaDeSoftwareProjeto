@@ -72,9 +72,9 @@ classDiagram
     Carrinho "1" --o "*" Pedido : possui
     Pedido "1" --o "1..2" Pagamento : possui
     Pedido "*" --o "1" Comprador : pertence
-    Pedido "*" --o "1" Vendedor : vendidoPor
+    Pedido "*" --o "1" Vendedor : realiza
     Pedido "1" --o "1..*" Produto : possui
     Produto "1" --o "*" Avaliacao : recebe
-    Avaliacao "*" --o "1" Comprador : feitaPor
+    Avaliacao "*" --o "1" Comprador : realiza
     
 ```
