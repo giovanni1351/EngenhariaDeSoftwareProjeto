@@ -70,7 +70,7 @@ classDiagram
     Comprador "1" --o "1" Carrinho : possui
     Comprador "1" --o "*" Pedido : realiza
     Carrinho "1" --o "*" Pedido : possui
-    Pedido "1" --o "1..2" Pagamento : possui
+    Pedido "1" --o "1" Pagamento : possui
     Pedido "*" --o "1" Comprador : pertence
     Pedido "*" --o "1" Vendedor : realiza
     Pedido "1" --o "1..*" Produto : possui
