@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart LR
     %% Camada de Apresentação
     subgraph Apresentação
         A1[Tela de Login/Cadastro]
@@ -40,12 +40,13 @@ flowchart TD
 
     %% Camada de Acesso a Dados
     subgraph "Acesso a Dados"
-        C1[(Usuários)]
-        C2[(Produtos)]
-        C3[(Pedidos)]
-        C4[(Avaliações)]
-        C5[(Transações)]
-        C6[(Mensagens)]
+        C1[(Comprador)]
+        C2[(Vendedor)]
+        C3[(Produto)]
+        C4[(Carrinho)]
+        C5[(Pedido)]
+        C6[(Pagamento)]
+        C7[(Avaliação)]
     end
 
     %% Conexões entre Apresentação e Lógica de Negócio
@@ -67,23 +68,29 @@ flowchart TD
 
     %% Conexões entre Lógica de Negócio e Acesso a Dados
     B1 --> C1
+    B1 --> C2
     B2 --> C2
-    B3 --> C2
+    B2 --> C3
     B3 --> C3
-    B4 --> C3
+    B4 --> C4
     B4 --> C5
-    B5 --> C4
+    B4 --> C6
+    B5 --> C1
+    B5 --> C7
     B6 --> C1
-    B7 --> C3
-    B8 --> C2
+    B7 --> C5
+    B8 --> C3
     B9 --> C1
+    B9 --> C2
     B10 --> C2
     B10 --> C3
+    B10 --> C5
     B11 --> C1
-    B12 --> C6
-    B13 --> C3
-    B14 --> C3
-    B15 --> C4
+    B13 --> C5
+    B13 --> C2
+    B14 --> C5
+    B14 --> C1
+    B15 --> C7
 
     %% Estilo das camadas
     classDef apresentacao fill:#ffcccc,stroke:#333,stroke-width:2px;
@@ -92,5 +99,5 @@ flowchart TD
 
     class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15 apresentacao;
     class B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15 negocio;
-    class C1,C2,C3,C4,C5,C6 dados;
+    class C1,C2,C3,C4,C5,C6,C7 dados;
 ```
